@@ -11,6 +11,7 @@ L’objectif est de présenter mes compétences et mes projets tout en documenta
   * Mettre en place le workflow
   * Automatisation des tests
   * Automatisation du déploiment
+* [Structure du projet](#Structure-du-projet)
 ## Hébergement
 Pour l'hébergement, j'ai choisi de ne pas utiliser `github site` afin de pouvoir apprendre la gestion d'un serveur.  
 Pour cela il a fallu trouver un hébergeur.
@@ -75,5 +76,20 @@ sudo netfilter-persistent save
 ---
 Vous pouvez désormais récuperer l'adresse ip public de votre instance, dans les details de votre instance, pour accéder à votre page web (*qui est pour le moment la page d'acceuil de Nginx*).
 
-# Workflow
+## Workflow
+## Structure du projet
+```
+📁 Portfolio/
+├── 📂 site/
+│   ├── 📂 html
+│   ├── 📂 images
+│   ├── 📂 style
+│   └── 📂 scripts
+├── 📂 .github/
+│   └── 📂 workflow
+├── 📂 README/
+│   └── 📂 images
+├── LICENCE
+└── README.md
+```
 
