@@ -78,6 +78,7 @@ Vous pouvez désormais récuperer l'adresse ip public de votre instance, dans le
 
 ## Workflow
 ## Structure du projet
+### Structure du dépot
 ```
 📁 Portfolio/
 ├── 📂 site/
@@ -92,4 +93,13 @@ Vous pouvez désormais récuperer l'adresse ip public de votre instance, dans le
 ├── LICENCE
 └── README.md
 ```
+### Structure des branches
+L'optique de ce projet est également de mettre en place des bonnes pratiques de DevOps avec une organisation particulière des branches.  
+Nous aurons quatre catégories de branches : 
+* la branche main
+* la branche de développement (Dev)
+* La branche de CI/CD
+* la branche de documentation (README)
 
+![](README/images/workflow.png)  
+*Schéma représentatif du git flow*
