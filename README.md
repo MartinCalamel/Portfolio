@@ -9,8 +9,10 @@ L’objectif est de présenter mes compétences et mes projets tout en documenta
 * [Workflow](#Workflow)
   * Gestion des secrets
   * Mettre en place le workflow
+  * Automatisation de la vérification syntaxique
   * Automatisation des tests
   * Automatisation du déploiment
+* [Structure du projet](#Structure-du-projet)
 ## Hébergement
 Pour l'hébergement, j'ai choisi de ne pas utiliser `github site` afin de pouvoir apprendre la gestion d'un serveur.  
 Pour cela il a fallu trouver un hébergeur.
@@ -75,5 +77,43 @@ sudo netfilter-persistent save
 ---
 Vous pouvez désormais récuperer l'adresse ip public de votre instance, dans les details de votre instance, pour accéder à votre page web (*qui est pour le moment la page d'acceuil de Nginx*).
 
-# Workflow
+## Workflow
+### Gestion des secrets
+### Mettre en place le workflow
+Pour la partie CI/CD, j'ai choisi de mettre en place des workflows GitHub action.  
+J'ai également choisi de séparer les différentes étapes.
+### Automatisation de la vérification syntaxique
+Le premier workflow à configurer est celui de la vérification syntaxique.  
+Le workflow que j'ai choisi de mettre en place se déclenche à chaque pull request que je fais sur les branches `main` et `Dev`.  
+Il utilise du linter sous Node.js pour vérifier la syntaxe des fichiers JS, HTML et CSS.  
+[Lien vers le workflow](.github/workflows/syntaxe.yml)
+### Automatisation des tests
+### Automatisation du déploiment
 
+## Structure du projet
+### Structure du dépot
+```
+📁 Portfolio/
+├── 📂 site/
+│   ├── 📂 html
+│   ├── 📂 images
+│   ├── 📂 style
+│   └── 📂 scripts
+├── 📂 .github/
+│   ├── 📂 config
+│   └── 📂 workflow
+├── 📂 README/
+│   └── 📂 images
+├── LICENCE
+└── README.md
+```
+### Structure des branches
+L'optique de ce projet est également de mettre en place des bonnes pratiques de DevOps avec une organisation particulière des branches.  
+Nous aurons quatre catégories de branches : 
+* la branche main
+* la branche de développement (Dev)
+* La branche de CI/CD
+* la branche de documentation (README)
+
+![](README/images/workflow.png)  
+*Schéma représentatif du git flow*
