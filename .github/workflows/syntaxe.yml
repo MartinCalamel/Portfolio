@@ -25,13 +25,13 @@ jobs:
 
       
       - name: Vérification JS avec ESLint
-        run: npx eslint "site/scripts/*.js"
+        run: eslint -c .github/configs/.eslintrc.json "site/scripts/*.js"
 
       - name: Vérification CSS avec Stylelint
-        run: npx stylelint "site/style/*.css"
+        run: stylelint --config .github/configs/.stylelintrc.json "site/style/*.css"
 
       - name: Vérification HTML avec HTMLHint
-        run: npx htmlhint "site/html/*.html"
+        run:  htmlhint -c .github/configs/.htmlhintrc "site/html/*.html"
       
       
                 
