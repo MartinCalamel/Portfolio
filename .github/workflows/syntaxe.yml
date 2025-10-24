@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 20
       - name: Installation des dépendances
-        run: npm install --save-dev eslint stylelint htmlhint
+        run: npm install --save-dev eslint@8 stylelint htmlhint
 
       
       - name: Vérification JS avec ESLint
