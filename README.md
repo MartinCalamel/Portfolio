@@ -87,6 +87,7 @@ Vous pouvez désormais récuperer l'adresse ip public de votre instance, dans le
 │   ├── 📂 style
 │   └── 📂 scripts
 ├── 📂 .github/
+│   ├── 📂 config
 │   └── 📂 workflow
 ├── 📂 README/
 │   └── 📂 images
