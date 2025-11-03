@@ -1,18 +1,15 @@
 header{
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  margin: none;
+  place-content: center space-between;
   border-style: solid;
   border-color: black;
-  margin: -100px -100px 0px -100px;
-  padding: 100px 100px 0px 100px;
+  margin: -100px -100px 0px;
+  padding: 100px 100px 0px;
 }
 
 header ul{
   display: flex;
-  justify-content: space-around;
-  align-content: center;
+  place-content: center space-around;
   width: 500px;
 }
 
