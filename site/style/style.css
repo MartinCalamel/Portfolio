@@ -1,16 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font: inherit;
+}
+
 header{
   display: flex;
   place-content: center space-between;
-  border-style: solid;
-  border-color: black;
-  margin: -100px -100px 0;
-  padding: 100px 100px 0;
+  border-bottom: solid black;
+}
+header h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+
 }
 
 header ul{
   display: flex;
   place-content: center space-around;
   width: 500px;
+  margin: 10px;
 }
 
 header li{
@@ -36,6 +50,6 @@ header li:hover{
   align-items: center;
   height: 200px;
   border-bottom: solid;
-  margin: 0 -30px;
   font-size: 40px;
+  font-weight: bold;
 }
