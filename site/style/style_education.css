@@ -8,37 +8,38 @@
 .education{
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
-  /* gap: 10px; */
   margin: 20px;
 }
 
-.etud_left{
+.etud-left{
   border-right: solid 1px ;
   display: flex;
   justify-content: end;
   align-items: start;
 }
-.etud_right{
+
+.etud-right{
   border-left: solid 1px ;
   display: flex;
   justify-content: start;
   align-items: start;
 }
 
-.etud_left_content{
+.etud-left-content{
   width: 40%;
   justify-self: end;
   text-align: right;
   padding: 30px;
 }
-.etud_right_content{
+
+.etud-right-content{
   width: 40%;
   justify-self: start;
   text-align: left;
   padding: 30px;
 }
 
-.etud_titre{
+.etud-titre{
   display: flex;
   justify-content: space-between;
   align-items: center;
