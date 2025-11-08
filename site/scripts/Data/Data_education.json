@@ -1,0 +1,46 @@
+{
+    "Education":[
+        {
+            "ecole" : "CPE_Lyon",
+            "dates" : "2024 - ",
+            "texte" : "École d’ingénieur numérique, dont je suis actuellement le cursus. Elle s’inscrit dans l’optique de former des ingénieurs pluridisciplinaires dans les domaines de l’électronique, de l’informatique et des télécommunications."
+        },
+        {
+            "ecole" : "Prépa Chartreux",
+            "dates" : "2022-2024",
+            "texte" : "La prépa CPE est une classe préparatoire aux grandes écoles associée à CPE Lyon. De ce fait, le programme suivi est similaire aux prépas concours avec en plus une spécialisation dans les matières numériques. "
+        },
+        {
+            "ecole" : "Institution Sainte Jeanne d'Arc",
+            "dates" : "2016-2022",
+            "texte" : "Collège et lycée, cette institution privée classée parmi les meilleurs lycées du var, cette institution nous pousse à nous dépasser avec de nombreux projets tels que des concours (CGénial, CNRD, ...) mais également des formations annexes (BIA, PSC)."
+        }
+    ],
+    "Diplômes":[
+        {
+            "Nom" : "Plongeur niveau 1",
+            "Année" : "2024",
+            "Mention" : null
+        },
+        {
+            "Nom" : "Baccalauréat",
+            "Année" : "2022",
+            "Mention" : "Mention : Bien"
+        },
+        {
+            "Nom" : "CNRD",
+            "Année" : "2021",
+            "Mention" : "2ᵉ Départemental\n3ᵉ Académique"
+        },
+        {
+            "Nom" : "BIA",
+            "Année" : "2020",
+            "Mention" : "Mention : Bien"
+        },
+        {
+            "Nom" : "CGénial",
+            "Année" : "2019",
+            "Mention" : "Participation"
+        }
+    ]
+}

@@ -5,33 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/style_education.css">
+    <script src="../scripts/main.js" defer></script>
 </head>
 <body>
     <section class="education">
-        <div class="etud-left">
-            <div class="etud-left-content">
-                <div class="etud-titre">
-                    <p class="date">2024 - </p>
-                    <h1>CPE Lyon</h1>
+        <template id="etud-left-template">
+            <div class="etud-left">
+                <div class="etud-left-content">
+                    <div class="etud-titre">
+                        <p class="date">{{date}}</p>
+                        <h1>{{ecole}}</h1>
+                    </div>
+                    <p class="etud-text">{{texte}}</p>
                 </div>
-                <p class="etud-text">École d’ingénieur numérique, dont je suis actuellement le cursus. Elle s’inscrit dans l’optique de former des ingénieurs pluridisciplinaires dans les domaines de l’électronique, de l’informatique et des télécommunications.</p>
+                <span class="dot"></span>
             </div>
-            <span class="dot"></span>
-        </div>
-        <div class="etud-right">
-        </div>
-        <div class="etud-left">
-        </div>
-        <div class="etud-right">
-            <span class="dot"></span>
-            <div class="etud-right-content">
-                <div class="etud-titre">
-                    <h1>CPE Lyon</h1>
-                    <p class="date">2024 - </p>
+            <div class="etud-right">
+            </div>
+        </template>
+        <template id="etud-right-template">
+            <div class="etud-left">
+            </div>
+            <div class="etud-right">
+                <span class="dot"></span>
+                <div class="etud-right-content">
+                    <div class="etud-titre">
+                        <h1>{{ecole}}</h1>
+                        <p class="date">{{date}}</p>
+                    </div>
+                    <p class="etud-text">{{texte}}</p>
                 </div>
-                <p class="etud-text">École d’ingénieur numérique, dont je suis actuellement le cursus. Elle s’inscrit dans l’optique de former des ingénieurs pluridisciplinaires dans les domaines de l’électronique, de l’informatique et des télécommunications.</p>
             </div>
-        </div>
+        </template>
     </section>
 </body>
 </html>
