@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+.education{
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px;
+}
+
+.etud-left{
+  border-right: solid 1px ;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+}
+
+.etud-right{
+  border-left: solid 1px ;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.etud-left-content{
+  width: 40%;
+  justify-self: end;
+  text-align: right;
+  padding: 30px;
+}
+
+.etud-right-content{
+  width: 40%;
+  justify-self: start;
+  text-align: left;
+  padding: 30px;
+}
+
+.etud-titre{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dot{
+    margin: 33px -17px;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: solid black;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 0;
+}
