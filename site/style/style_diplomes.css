@@ -61,8 +61,9 @@
   font-size: 20px;
   font-weight: bold;
   color: #fff;
-  width: 0 0 -40px;
+
   --r: .8em;
+
   padding-inline: calc(var(--r) + .3em);
   line-height: 1.8;
   clip-path: polygon(0 0,100% 0,calc(100% - var(--r)) 50%,100% 100%,0 100%, var(--r) 50%);
