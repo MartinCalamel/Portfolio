@@ -8,8 +8,10 @@
 *      * from main.js => get_data_from_json, get_data_from_localStorage, set_up_localStorage()
 */
 
+import {get_data_from_localStorage} from './main.js'
+
 function update_template_education() {
-    
+
     /* # update_template_education
     * ## Objectif : mettre à jour le template éducation
     *       avec le style gauche puis droite.
@@ -19,6 +21,6 @@ function update_template_education() {
     * None
     */
 
-    data = get_data_from_localStorage("education");
+    let data = get_data_from_localStorage("education");
 
 }

@@ -25,7 +25,7 @@ async function get_data_from_json(data_name, file_name) {
     localStorage.setItem(data_name, JSON.stringify(data));
 }
 
-function get_data_from_localStorage(data_name) {
+export function get_data_from_localStorage(data_name) {
     
     /* # get_data_from_localStorage
     * ## Objectif : Récupérer une certaine variable du localStorage.
