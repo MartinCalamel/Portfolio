@@ -9,6 +9,16 @@
 */
 
 function update_template_education() {
+    
+    /* # update_template_education
+    * ## Objectif : mettre à jour le template éducation
+    *       avec le style gauche puis droite.
+    * ## Input :
+    * None
+    * ## Output :
+    * None
+    */
+
     data = get_data_from_localStorage("education");
 
 }

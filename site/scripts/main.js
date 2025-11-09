@@ -4,8 +4,8 @@
 */
 
 // Définition des constantes
-const JSON_FILE_NAME = "Data_education.json"
-const TAB_DATA_NAME = ["Education", "Diplômes"]
+const JSON_FILE_NAME = "Data_education.json";
+const TAB_DATA_NAME = ["Education", "Diplômes"];
 
 async function get_data_from_json(data_name, file_name) {
     
@@ -19,10 +19,10 @@ async function get_data_from_json(data_name, file_name) {
     * None
     */
 
-    result = await fetch('../scripts/Data/'+file_name);
+    let result = await fetch("../scripts/Data/" + file_name);
     let data = await result.json();
     data = data[data_name];
-    localStorage.setItem(data_name, JSON.stringify(data))    
+    localStorage.setItem(data_name, JSON.stringify(data));
 }
 
 function get_data_from_localStorage(data_name) {
@@ -54,9 +54,9 @@ function set_up_localStorage() {
         let data = localStorage.getItem(data_name);
         if (!data){
             console.log("[INFO] no data for " + data_name);
-            console.log("[INFO] Getting data...")
+            console.log("[INFO] Getting data...");
             get_data_from_json(data_name, JSON_FILE_NAME);
-            console.log("[INFO] Data OK")
+            console.log("[INFO] Data OK");
         }
     }
 }
