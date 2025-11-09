@@ -9,6 +9,9 @@ module.exports = {
     "no-undef": "error",
     "semi": ["warn", "always"],
     "quotes": ["warn", "double"]
+  },
+  parserOption:{
+    "sourceType":"module"
   }
 };
 
