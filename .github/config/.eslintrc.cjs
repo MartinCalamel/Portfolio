@@ -10,7 +10,7 @@ module.exports = {
     "semi": ["warn", "always"],
     "quotes": ["warn", "double"]
   },
-  parserOption:{
+  parserOptions:{
     "sourceType":"module"
   }
 };
