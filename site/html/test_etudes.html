@@ -6,16 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style/style_education.css">
     <script type="module" src="../scripts/main.js"></script>
-    <script src="../scripts/index.js" defer></script>
+    <script type="module" src="../scripts/index.js" defer></script>
    
 </head>
 <body>
-    <section class="education">
+    <section id="education" class="education">
         <template id="etud-left-template">
-            <div class="etud-left">
+            <div id="child" class="etud-left">
                 <div class="etud-left-content">
                     <div class="etud-titre">
-                        <p class="date">{{date}}</p>
+                        <p class="date">{{dates}}</p>
                         <h1>{{ecole}}</h1>
                     </div>
                     <p class="etud-text">{{texte}}</p>
@@ -28,12 +28,12 @@
         <template id="etud-right-template">
             <div class="etud-left">
             </div>
-            <div class="etud-right">
+            <div id="child" class="etud-right">
                 <span class="dot"></span>
                 <div class="etud-right-content">
                     <div class="etud-titre">
                         <h1>{{ecole}}</h1>
-                        <p class="date">{{date}}</p>
+                        <p class="date">{{dates}}</p>
                     </div>
                     <p class="etud-text">{{texte}}</p>
                 </div>

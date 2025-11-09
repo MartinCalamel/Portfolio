@@ -8,7 +8,7 @@
 *      * from main.js => get_data_from_json, get_data_from_localStorage, set_up_localStorage()
 */
 
-import {get_data_from_localStorage} from './main.js'
+import {get_data_from_localStorage} from "./main.js";
 
 function update_template_education() {
 
@@ -21,6 +21,31 @@ function update_template_education() {
     * None
     */
 
-    let data = get_data_from_localStorage("education");
+    let data = get_data_from_localStorage("Education");
+    let template_right = document.querySelector("#etud-right-template");
+    let template_left = document.querySelector("#etud-left-template");
+    let compteur = 0;
+    
+    for (const edu of data){
 
+        // choix du clone (droite ou gauche)
+        let clone;
+        if (compteur%2 == 0){
+            clone = document.importNode(template_left.content, true);
+        } else {
+            clone = document.importNode(template_right.content, true);
+        }
+        compteur ++;
+        console.log(clone.getElementById("child").innerHTML)
+        let newcontent = clone.getElementById("child").innerHTML
+            .replace(/{{dates}}/g, edu.dates)
+            .replace(/{{ecole}}/g, edu.ecole)
+            .replace(/{{texte}}/g, edu.texte);
+        
+        clone.getElementById("child").innerHTML = newcontent;
+        document.getElementById("education").appendChild(clone);
+    }
 }
+
+
+update_template_education();
