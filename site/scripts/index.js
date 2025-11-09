@@ -49,5 +49,31 @@ function update_template_education() {
     }
 }
 
+function update_template_diplome() {
 
+    /* # update_template_diplome
+    * ## Objectif : mettre à jour le template diplôme
+    * ## Input :
+    * None
+    * ## Output :
+    * None
+    */
+
+    let data = get_data_from_localStorage("Diplômes");
+    let template = document.querySelector("#diplome-template");
+
+    for (const diplome of data){
+        let clone = document.importNode(template.content, true);
+
+        let newcontent = clone.firstElementChild.innerHTML 
+            .replace(/{{Nom}}/g, diplome.Nom)
+            .replace(/{{Mention}}/g, diplome.Mention)
+            .replace(/{{Année}}/g, diplome.Année);
+        
+        clone.firstElementChild.innerHTML = newcontent;
+        document.getElementById("diplomes").appendChild(clone);
+    }
+
+}
 update_template_education();
+update_template_diplome();

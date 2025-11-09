@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin Calamel</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/style_education.css">
+    <link rel="stylesheet" href="../style/style_diplomes.css">
+    <script type="module" src="../scripts/main.js" defer></script>
+    <script type="module" src="../scripts/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,6 +24,46 @@
         <h1>
             Bienvenue sur mon Portfolio
         </h1>
+    </section>
+    <section id="education" class="education">
+        <template id="etud-left-template">
+            <div class="etud-left">
+                <div class="etud-left-content">
+                    <div class="etud-titre">
+                        <p class="date">{{dates}}</p>
+                        <h1>{{ecole}}</h1>
+                    </div>
+                    <p class="etud-text">{{texte}}</p>
+                </div>
+                <span class="dot"></span>
+            </div>
+            <div class="etud-right">
+            </div>
+        </template>
+        <template id="etud-right-template">
+            <div class="etud-left">
+            </div>
+            <div class="etud-right">
+                <span class="dot"></span>
+                <div class="etud-right-content">
+                    <div class="etud-titre">
+                        <h1>{{ecole}}</h1>
+                        <p class="date">{{dates}}</p>
+                    </div>
+                    <p class="etud-text">{{texte}}</p>
+                </div>
+            </div>
+        </template>
+    </section>
+    <section id="diplomes" class="diplomes">
+        <h1>Diplômes et Récompenses</h1>
+        <template id="diplome-template">
+            <div class="badge">
+                <p>{{Nom}}</p>
+                <span class="ribbon3">{{Mention}}</span>
+                <div class="ribbon">{{Année}}</div>
+            </div>
+        </template>
     </section>
 </body>
 </html>

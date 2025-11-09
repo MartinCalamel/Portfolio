@@ -20,7 +20,7 @@
         {
             "Nom" : "Plongeur niveau 1",
             "Année" : "2024",
-            "Mention" : null
+            "Mention" : ""
         },
         {
             "Nom" : "Baccalauréat",
@@ -30,7 +30,7 @@
         {
             "Nom" : "CNRD",
             "Année" : "2021",
-            "Mention" : "2ᵉ Départemental\n3ᵉ Académique"
+            "Mention" : "2ᵉ Départemental<br>3ᵉ Académique"
         },
         {
             "Nom" : "BIA",
