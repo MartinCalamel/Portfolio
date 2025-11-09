@@ -35,15 +35,17 @@ function update_template_education() {
         } else {
             clone = document.importNode(template_right.content, true);
         }
-        compteur ++;
-        console.log(clone.getElementById("child").innerHTML)
-        let newcontent = clone.getElementById("child").innerHTML
+
+        // en fonction des templates on a une alternance premier enfant, deuxième enfant
+        let newcontent = clone.children[compteur%2].innerHTML 
             .replace(/{{dates}}/g, edu.dates)
             .replace(/{{ecole}}/g, edu.ecole)
             .replace(/{{texte}}/g, edu.texte);
         
-        clone.getElementById("child").innerHTML = newcontent;
+        clone.children[compteur%2].innerHTML = newcontent;
         document.getElementById("education").appendChild(clone);
+
+        compteur ++;
     }
 }
 
