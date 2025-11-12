@@ -4,35 +4,19 @@
   <meta charset="UTF-8">
   <title>Badge Plongée Niveau 1</title>
   <link rel="stylesheet" href="../style/style_diplomes.css">
+  <script type="module" src="../scripts/main.js"></script>
+  <script type="module" src="../scripts/index.js" defer></script>
 </head>
 <body>
-  <section class="diplomes">
+  <section id="diplomes" class="diplomes">
     <h1>Diplômes et Récompenses</h1>
-    <div class="badge">
-      <p>Plongée niveau 1</p>
-      <span class="ribbon3">Mention Bien</span>
-      <div class="ribbon">2024</div>
-    </div>
-    <div class="badge">
-      <p>Plongée niveau 1</p>
-      <span class="ribbon3">Mention Bien</span>
-      <div class="ribbon">2024</div>
-    </div>
-    <div class="badge">
-      <p>Plongée niveau 1</p>
-      <span class="ribbon3">Mention Bien</span>
-      <div class="ribbon">2024</div>
-    </div>
-    <div class="badge">
-      <p>Plongée niveau 1</p>
-      <span class="ribbon3">Mention Bien</span>
-      <div class="ribbon">2024</div>
-    </div>
-    <div class="badge">
-      <p>Plongée niveau 1</p>
-      <span class="ribbon3">Mention Bien</span>
-      <div class="ribbon">2024</div>
-    </div>
+    <template id="diplome-template">
+      <div class="badge">
+        <p>{{Nom}}</p>
+        <span class="ribbon3">{{Mention}}</span>
+        <div class="ribbon">{{Année}}</div>
+      </div>
+    </template>
   </section>
 </body>
 </html>
