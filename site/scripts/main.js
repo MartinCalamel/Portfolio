@@ -38,7 +38,7 @@ export function get_data_from_localStorage(data_name) {
     return JSON.parse(localStorage.getItem(data_name));
 }
 
-function set_up_localStorage() {
+export async function set_up_localStorage() {
 
     /* # set_up_localStorage
     * ## Objectif : remplir le localStorage avec les
@@ -55,10 +55,8 @@ function set_up_localStorage() {
         if (!data){
             console.log("[INFO] no data for " + data_name);
             console.log("[INFO] Getting data...");
-            get_data_from_json(data_name, JSON_FILE_NAME);
+            await get_data_from_json(data_name, JSON_FILE_NAME);
             console.log("[INFO] Data OK");
         }
     }
 }
-
-set_up_localStorage();

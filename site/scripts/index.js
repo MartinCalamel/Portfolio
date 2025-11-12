@@ -5,10 +5,10 @@
 *       * récupérer les données du json.
 *       * Mettre à jour l'ensemble des templates
 * Fonction importées :
-*      * from main.js => get_data_from_json, get_data_from_localStorage, set_up_localStorage()
+*      * from main.js => get_data_from_localStorage, set_up_localStorage()
 */
 
-import {get_data_from_localStorage} from "./main.js";
+import {get_data_from_localStorage, set_up_localStorage} from "./main.js";
 
 function update_template_education() {
 
@@ -75,5 +75,13 @@ function update_template_diplome() {
     }
 
 }
-update_template_education();
-update_template_diplome();
+
+async function load_page() {
+    await set_up_localStorage();
+    update_template_education();
+    update_template_diplome();
+    
+}
+
+load_page();
+
