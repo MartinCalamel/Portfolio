@@ -77,6 +77,15 @@ function update_template_diplome() {
 }
 
 async function load_page() {
+
+    /* # load_page
+    * ## Objectif : routine à executer lors du chargement de la page
+    * ## Input :
+    * None
+    * ## Output :
+    * None
+    */
+   
     await set_up_localStorage();
     update_template_education();
     update_template_diplome();
