@@ -9,6 +9,14 @@
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
   margin: 20px;
+  padding: 0 0 40px;
+  border-bottom: solid;
+}
+
+.education .edu-titre{
+  grid-column: span 2;
+  text-align: center;
+  margin: 20px;
 }
 
 .etud-left{
@@ -43,6 +51,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 400px;
+}
+
+.date{
+  width: fit-content;
+}
+
+.etud-texte{
+  width: 500px;
 }
 
 .dot{
