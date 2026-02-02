@@ -42,5 +42,37 @@
             "Année" : "2019",
             "Mention" : "Participation"
         }
+    ],
+    "Projets":[
+        {
+            "Nom" : "Portfolio",
+            "Image" : "portfolio.jpg",
+            "Texte" : "Un de mes grands projets est la réalisation de ce portfolio. Celui-ci mélange plusieurs compétences telles que le développement web, la gestion de serveur, le DevOps, etc.",
+            "Liens" : "https://github.com/MartinCalamel/Portfolio"
+        },
+        {
+            "Nom" : "Silence",
+            "Image" : "silence.jpg",
+            "Texte" : "Ce projet est une messagerie chiffrée. L’objectif de ce projet est le comprendre et implémenter la méthode ECC, un système d’authentification ainsi qu’une liaison client serveur.",
+            "Liens" : "https://github.com/MartinCalamel/Silence"
+        },
+        {
+            "Nom" : "Music",
+            "Image" : "music.jpg",
+            "Texte" : "Ce projet répond à un besoin. Je ne trouvais aucune application me permettant d’écouter de la musique en hors réseau, sans être constamment pollué de pub. J’ai donc fait un télécharger avec une recherche intégré",
+            "Liens" : "https://github.com/MartinCalamel/Music"
+        },
+        {
+            "Nom" : "RSA_Cryptographie",
+            "Image" : "rsa_cryptographie.jpg",
+            "Texte" : "Découverte de la méthode RSA, de ses forces et de ses faiblesses.",
+            "Liens" : "https://github.com/MartinCalamel/RSA_Cryptographie"
+        },
+        {
+            "Nom" : "Z_first",
+            "Image" : "z_first.jpg",
+            "Texte" : "Project de développement d'un virus informatique non fonctionnel. L’objectif était de comprendre comment réaliser un reverse shell.",
+            "Liens" : "https://github.com/MartinCalamel/Z_first"
+        }
     ]
 }
