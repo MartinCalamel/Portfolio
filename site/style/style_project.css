@@ -14,7 +14,13 @@
 }
 
 .div-image-projet img{
-    height: 0%;
+    height: 200px;
+    margin: 20px;
+}
+
+.div-image-projet img:hover{
+    height: 210px;
+    margin: 15px;
 }
 
 .div-image-projet h2{
