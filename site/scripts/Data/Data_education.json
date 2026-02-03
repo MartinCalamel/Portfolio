@@ -43,7 +43,7 @@
             "Mention" : "Participation"
         }
     ],
-    "Projets":[
+    "Projets_perso":[
         {
             "Nom" : "Portfolio",
             "Image" : "portfolio.PNG",
@@ -59,7 +59,7 @@
         {
             "Nom" : "Music",
             "Image" : "music.jpg",
-            "Texte" : "Ce projet répond à un besoin. Je ne trouvais aucune application me permettant d’écouter de la musique en hors réseau, sans être constamment pollué de pub. J’ai donc fait un télécharger avec une recherche intégré",
+            "Texte" : "Ce projet répond à un besoin. Je ne trouvais aucune application me permettant d’écouter de la musique en hors réseau, sans être constamment pollué de pub. J’ai donc fait un téléchargeur avec une recherche intégré",
             "Lien" : "https://github.com/MartinCalamel/Music"
         },
         {
@@ -73,6 +73,32 @@
             "Image" : "z_first.jpg",
             "Texte" : "Project de développement d'un virus informatique non fonctionnel. L’objectif était de comprendre comment réaliser un reverse shell.",
             "Lien" : "https://github.com/MartinCalamel/Z_first"
+        }
+    ],
+    "Projets_ecole":[
+        {
+            "Nom" : "Cπ-Space",
+            "Image" : "Cpi-space.png",
+            "Texte" : "Projet de design, conception et fabrication d'une fusée expérimentale dans le cadre de C-space en partenariat avec le CNES et Planet-Science. Ce projet nous incite à explorer tous les aspects d'une réalisation de grande envergure, d'autant plus que je suis en charge du projet.",
+            "Lien" : ""
+        },
+        {
+            "Nom" : "TSI Synthèse",
+            "Image" : "tsi.jpg",
+            "Texte" : "Projet de fin de module TSI (Traitement et Synthèse d'Image). Il s'agit de concevoir un jeu vidéo en 3D sous Python via le module OpenGL. Pour notre part, nous avons réalisé un labyrinthe.",
+            "Lien" : ""
+        },
+        {
+            "Nom" : "TLW Synthèse",
+            "Image" : "tlw.png",
+            "Texte" : "Projet dans le cadre du module TLW (Technique et Language du Web). Nous avons réalisé un site internet vitrine pour une agence de voyage fictive dans le but de nous familiariser avec les bases du web (HTML, JavaScript, CSS, API,...)",
+            "Lien" : ""
+        },
+        {
+            "Nom" : "Space Invader",
+            "Image" : "invaders.jpg",
+            "Texte" : "Projet réalisé dans le cadre du module développement Python. Nous avons dû faire un jeu vidéo basé sur Space Invaders avec Python en utilisant la POO.",
+            "Lien" : ""
         }
     ]
 }

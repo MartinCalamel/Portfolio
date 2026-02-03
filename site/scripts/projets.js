@@ -10,7 +10,7 @@
 
 import {get_data_from_localStorage, set_up_localStorage} from "./main.js";
 
-function update_template_projet() {
+function update_template_projet(type) {
 
     /* # update_template_education
     * ## Objectif : mettre à jour le template éducation
@@ -21,9 +21,9 @@ function update_template_projet() {
     * None
     */
 
-    let data = get_data_from_localStorage("Projets");
-    let template_right = document.querySelector("#projet-template-1");
-    let template_left = document.querySelector("#projet-template-2");
+    let data = get_data_from_localStorage("Projets_" + type);
+    let template_right = document.querySelector("#projet-" + type + "-template-1");
+    let template_left = document.querySelector("#projet-" + type + "-template-2");
     let compteur = 0;
     
     for (const proj of data){
@@ -44,7 +44,7 @@ function update_template_projet() {
             .replace(/{{Texte}}/g, proj.Texte);
         
         clone.firstElementChild.innerHTML = newcontent;
-        document.getElementById("projet").appendChild(clone);
+        document.getElementById("projet-" + type).appendChild(clone);
 
         compteur ++;
     }
@@ -62,7 +62,8 @@ async function load_page() {
     */
    
     await set_up_localStorage();
-    update_template_projet();
+    update_template_projet("perso");
+    update_template_projet("ecole");
 }
 
 load_page();
