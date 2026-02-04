@@ -45,7 +45,42 @@ Ou en une ligne
 ```console
 sudo apt update && sudo apt install nginx -y
 ```
+Par default, le service nginx se lance dès l'installation.  
+On peut verrifier cela grâce à la commande :  
+```console
+systemctl status nginx
+```
+La commande doit retourner quelque chose comme : 
+```console
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2026-02-04 13:34:30 UTC; 1min 34s ago
+       Docs: man:nginx(8)
+    Process: 656 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 716 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 719 (nginx)
+      Tasks: 3 (limit: 6845)
+     Memory: 12.8M
+        CPU: 268ms
+     CGroup: /system.slice/nginx.service
+             ├─719 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             ├─720 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+             └─721 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+
+févr. 04 13:34:28 macalfirst systemd[1]: Starting A high performance web server and a reverse proxy server...
+févr. 04 13:34:30 macalfirst systemd[1]: Started A high performance web server and a reverse proxy server.
+```
+Si ce n'est pas le cas, il est necessaire de faire la commande : 
+```
+systemctl start nginx
+```
 À ce stade, nous avons la page d'accueil d'Nginx en [http://localhost:80](http://localhost:80)  
+Au niveau de l'arborescence du serveur plusieurs fichiers sont intéressant : 
+* /etc/nginx/nginx.conf (*configuration du serveur nginx*)
+* /etc/nginx/sites-enabled/ (*repertoire où sont placer les fichier de configuration des sites*)
+
+Par default nginx affiche un site donc la configuration est en `/etc/nginx/sites-enabled/default`.  
+La page html de ce site est localiser en `/var/www/html/`. (cette information est donner dans le fichier default à la ligne "*root /var/www/html*").  
 Nous allons maintenant voir comment exposer ce site sur internet.
 
 #### Exposition du Port 80
