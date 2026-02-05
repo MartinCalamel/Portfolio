@@ -5,6 +5,10 @@
   color: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 header{
   display: flex;
   place-content: center space-between;
