@@ -5,7 +5,7 @@
 
 // Définition des constantes
 const JSON_FILE_NAME = "Data_education.json";
-const TAB_DATA_NAME = ["Education", "Diplômes"];
+const TAB_DATA_NAME = ["Education", "Diplômes", "Projets_perso", "Projets_ecole"];
 
 async function get_data_from_json(data_name, file_name) {
     

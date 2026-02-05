@@ -1,0 +1,39 @@
+.type-projet{
+    margin: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.div-projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.div-image-projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.div-image-projet img{
+    height: 200px;
+    margin: 20px;
+}
+
+.div-image-projet img:hover{
+    height: 210px;
+    margin: 15px;
+}
+
+.div-image-projet h2{
+    text-align: center;
+}
+
+.div-text-projet{
+    width: 30%;
+    font-size: 30px;
+}

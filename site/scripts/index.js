@@ -5,7 +5,7 @@
 *       * récupérer les données du json.
 *       * Mettre à jour l'ensemble des templates
 * Fonction importées :
-*      * from main.js => get_data_from_localStorage, set_up_localStorage()
+*      * from main.js => get_data_from_localStorage, set_up_localStorage
 */
 
 import {get_data_from_localStorage, set_up_localStorage} from "./main.js";

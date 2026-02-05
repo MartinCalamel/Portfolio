@@ -42,5 +42,63 @@
             "Année" : "2019",
             "Mention" : "Participation"
         }
+    ],
+    "Projets_perso":[
+        {
+            "Nom" : "Portfolio",
+            "Image" : "portfolio.PNG",
+            "Texte" : "Un de mes grands projets est la réalisation de ce portfolio. Celui-ci mélange plusieurs compétences telles que le développement web, la gestion de serveur, le DevOps, etc.",
+            "Lien" : "https://github.com/MartinCalamel/Portfolio"
+        },
+        {
+            "Nom" : "Silence",
+            "Image" : "silence.jpg",
+            "Texte" : "Ce projet est une messagerie chiffrée. L’objectif de ce projet est le comprendre et implémenter la méthode ECC, un système d’authentification ainsi qu’une liaison client serveur.",
+            "Lien" : "https://github.com/MartinCalamel/Silence"
+        },
+        {
+            "Nom" : "Music",
+            "Image" : "music.jpg",
+            "Texte" : "Ce projet répond à un besoin. Je ne trouvais aucune application me permettant d’écouter de la musique en hors réseau, sans être constamment pollué de pub. J’ai donc fait un téléchargeur avec une recherche intégré",
+            "Lien" : "https://github.com/MartinCalamel/Music"
+        },
+        {
+            "Nom" : "RSA_Cryptographie",
+            "Image" : "rsa_cryptographie.PNG",
+            "Texte" : "Découverte de la méthode RSA, de ses forces et de ses faiblesses.",
+            "Lien" : "https://github.com/MartinCalamel/RSA_Cryptographie"
+        },
+        {
+            "Nom" : "Z_first",
+            "Image" : "z_first.jpg",
+            "Texte" : "Project de développement d'un virus informatique non fonctionnel. L’objectif était de comprendre comment réaliser un reverse shell.",
+            "Lien" : "https://github.com/MartinCalamel/Z_first"
+        }
+    ],
+    "Projets_ecole":[
+        {
+            "Nom" : "Cπ-Space",
+            "Image" : "Cpi-space.png",
+            "Texte" : "Projet de design, conception et fabrication d'une fusée expérimentale dans le cadre de C-space en partenariat avec le CNES et Planet-Science. Ce projet nous incite à explorer tous les aspects d'une réalisation de grande envergure, d'autant plus que je suis en charge du projet.",
+            "Lien" : ""
+        },
+        {
+            "Nom" : "TSI Synthèse",
+            "Image" : "tsi.jpg",
+            "Texte" : "Projet de fin de module TSI (Traitement et Synthèse d'Image). Il s'agit de concevoir un jeu vidéo en 3D sous Python via le module OpenGL. Pour notre part, nous avons réalisé un labyrinthe.",
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_TSI.md"
+        },
+        {
+            "Nom" : "TLW Synthèse",
+            "Image" : "tlw.png",
+            "Texte" : "Projet dans le cadre du module TLW (Technique et Language du Web). Nous avons réalisé un site internet vitrine pour une agence de voyage fictive dans le but de nous familiariser avec les bases du web (HTML, JavaScript, CSS, API,...)",
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_TLW.md"
+        },
+        {
+            "Nom" : "Space Invader",
+            "Image" : "invaders.jpg",
+            "Texte" : "Projet réalisé dans le cadre du module développement Python. Nous avons dû faire un jeu vidéo basé sur Space Invaders avec Python en utilisant la POO.",
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_invaders.md"
+        }
     ]
 }
