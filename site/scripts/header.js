@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <li><a href="index.html">Education</a></li>
         <li><a href="projet.html">Projet</a></li>
         <li>A propos</li>
-        <li>Contact</li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
   `;
   const titreHTML = `
