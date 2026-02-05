@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+  /*
+  Ajout du header de façon dynamique
+  Objectif  => réduire la redondance de code
+            => Faciliter la mise à jour des liens du menu
+  */
   const headerHTML = `
     <h1>Martin Calamel</h1>
     <ul>
