@@ -4,6 +4,9 @@
   line-height: inherit;
   color: inherit;
 }
+a {
+  text-decoration: none;
+}
 
 header{
   display: flex;
