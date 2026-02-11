@@ -11,10 +11,17 @@
 // import {set_up_localStorage} from "./main.js";
 
 
-const JSON_FILE_NAME = "Data_education.json";
-const TAB_DATA_NAME = ["Education", "Diplômes", "Projets_perso", "Projets_ecole", "Hobby"];
+import {set_up_localStorage} from "./main.js";
 
 function update_template_loisir() {
+    /* # update_template_education
+    * ## Objectif : mettre à jour les template loisir
+    *   pour les cartes de présentation et les descriptions cachés
+    * ## Input :
+    * None
+    * ## Output :
+    * None
+    */
 
     let data = JSON.parse(localStorage.getItem("Hobby"));
     let template_activite = document.querySelector("#tpl-activite");
@@ -27,7 +34,6 @@ function update_template_loisir() {
 
         const key = "loisir-" + index;
 
-        /* ===== CARTE ===== */
         let clone_activite = document.importNode(template_activite.content, true);
         let card = clone_activite.querySelector(".activite");
 
@@ -39,7 +45,6 @@ function update_template_loisir() {
 
         grid.appendChild(clone_activite);
 
-        /* ===== SECTION ===== */
         let clone_texte = document.importNode(template_texte.content, true);
         let section = clone_texte.querySelector(".hidden-section");
 
@@ -65,29 +70,6 @@ async function load_page() {
    
     await set_up_localStorage();
     update_template_loisir();
-}
-
-async function set_up_localStorage() {
-
-    /* # set_up_localStorage
-    * ## Objectif : remplir le localStorage avec les
-    *       différentes variables si elle ne sont
-    *       pas déjà présente dans les keys.
-    * ## Input :
-    * None
-    * ## Output :
-    * None
-    */
-
-    for (const data_name of TAB_DATA_NAME){
-        let data = localStorage.getItem(data_name);
-        if (!data){
-            console.log("[INFO] no data for " + data_name);
-            console.log("[INFO] Getting data...");
-            await get_data_from_json(data_name, JSON_FILE_NAME);
-            console.log("[INFO] Data OK");
-        }
-    }
 }
 
 load_page();
