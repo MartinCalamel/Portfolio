@@ -36,12 +36,10 @@
   padding: 0 40px;;
   border-radius: 16px;
   border-style: solid;
-
   opacity: 0;
   transform: translateY(20px);
   max-height: 0;
   overflow: hidden;
-
   transition:
     opacity 0.5s ease,
     transform 0.5s ease,
