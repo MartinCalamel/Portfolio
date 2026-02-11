@@ -5,7 +5,7 @@
 
 // Définition des constantes
 const JSON_FILE_NAME = "Data_education.json";
-const TAB_DATA_NAME = ["Education", "Diplômes", "Projets_perso", "Projets_ecole"];
+const TAB_DATA_NAME = ["Education", "Diplômes", "Projets_perso", "Projets_ecole", "Hobby"];
 
 async function get_data_from_json(data_name, file_name) {
     
@@ -59,4 +59,18 @@ export async function set_up_localStorage() {
             console.log("[INFO] Data OK");
         }
     }
+}
+
+function reload_time() {
+    // calcule du temps depuis la dernière mise à jour des information des destinations.
+    let date_session = new Date(localStorage.getItem("connected"));
+    let auj = new Date();
+    return (Math.abs(auj - date_session) / (60 * 1000) > 1);
+}
+
+if (reload_time()) {
+    console.log("[Info] update LocalStorage");
+    localStorage.clear();
+    localStorage.setItem("connected", new Date());
+    set_up_localStorage();
 }
