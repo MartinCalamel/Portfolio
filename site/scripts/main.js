@@ -62,10 +62,10 @@ export async function set_up_localStorage() {
 }
 
 function reload_time() {
-    // calcule du temps depuis la dernière mise à jour des information des destinations.
+    // calcule du temps depuis la dernière mise à jour des informations.
     let date_session = new Date(localStorage.getItem("connected"));
     let auj = new Date();
-    return (Math.abs(auj - date_session) / (60 * 1000) > 1);
+    return (Math.abs(auj - date_session) / (60 * 1000) > 1440); // supérieur à 1 jour
 }
 
 if (reload_time()) {
