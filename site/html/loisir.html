@@ -8,40 +8,36 @@
     <link rel="stylesheet" href="../style/style_loisir.css">
     <script src="../scripts/header.js"></script>
     <script type="module" src="../scripts/main.js" defer></script>
+    <script src="../scripts/loisir.js" defer></script>
 </head>
 <body>
     <header id="header">
     </header>
     <section class="titre" id="titre">
     </section>
-    <section class="loisir">
+    <section class="loisir" id="loisir">
         <h2 class="loisir-titre">Loisir</h2>
 
-        <input type="checkbox" id="toggle-section-alpi" class="toggle-section">
-        <input type="checkbox" id="toggle-section-mer" class="toggle-section">
+        <div class="grille-loisir" id="grille-loisir">
 
-        <div class="grille-loisir">
-            <div class="activite">
-                <label for="toggle-section-alpi" class="image-btn">
-                    <img src="../images/loisir/alpi_sketch.jpg" alt="alpi">
-                </label>
-                
-            </div>
-            <div class="activite">
-                <label for="toggle-section-mer" class="image-btn">
-                    <img src="../images/loisir/plongée_sketch.jpg" alt="alpi">
-                </label>
-            </div>
+        </div>
+        <div class="loisir-contenu" id="loisir-contenu">
         </div>
 
-        <section class="hidden-section hidden-section-alpi">
-            <h2>Montagne</h2>
-            <p>petit text sur la montagne</p>
-        </section>
-        <section class="hidden-section hidden-section-me">
-            <h2>Mer</h2>
-            <p>petit text sur la mer</p>
-        </section>
+        <template id="tpl-activite">
+            <div class="activite" data-key="{{key}}">
+                <img src="../images/loisir/{{image}}" alt="{{image}}">
+            </div>
+        </template>
+
+        <template id="tpl-section">
+            <section class="hidden-section" data-key="{{key}}">
+                <h2>{{titre}}</h2>
+                <p>{{texte}}</p>
+            </section>
+        </template>
+
+
     </section>
 </body>
 </html>

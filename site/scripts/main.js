@@ -60,3 +60,17 @@ export async function set_up_localStorage() {
         }
     }
 }
+
+function reload_time() {
+    // calcule du temps depuis la dernière mise à jour des information des destinations.
+    let date_session = new Date(localStorage.getItem("connected"));
+    let auj = new Date();
+    return (Math.abs(auj - date_session) / (60 * 1000) > 1);
+}
+
+if (reload_time()) {
+    console.log("[Info] update LocalStorage");
+    localStorage.clear();
+    localStorage.setItem("connected", new Date());
+    set_up_localStorage();
+}

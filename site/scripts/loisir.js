@@ -46,7 +46,7 @@ function update_template_loisir() {
         section.dataset.key = key;
 
         section.querySelector("h2").textContent = proj.Nom;
-        section.querySelector("p").textContent = proj.Text;
+        section.querySelector("p").innerHTML = proj.Text;
 
         contenu.appendChild(clone_texte);
     });

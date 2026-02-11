@@ -104,23 +104,23 @@
     "Hobby":[
         {
             "Nom" : "Montagne",
-            "Text" : "petit texte sur la montagne",
-            "Image" : "alpi.jpg"
+            "Text" : "La montagne fut pour moi un lieu de tous les dépassements, physiques et mentaux.<br>Passionné par la montagne depuis petit, je fus vite arrêté par la peur du vide. <br>C'est grâce à la pratique de l'escalade que j'ai pu, victoire après victoire, aller de plus en plus haut. <br>L’environnement montagnard est pour moi un lieu de paix et d’exigence, me permettant de donner le meilleur de moi-même.",
+            "Image" : "alpi_sketch.jpg"
         },
         {
             "Nom" : "Mer",
-            "Text" : "petit texte sur la mer",
-            "Image" : "plongée.jpg"
+            "Text" : "Originaire du Var, la mer est une évidence dans ma famille. <br>Nageur depuis petit, et apnéiste amateur, ce n'est que récemment que j'ai commencé la plongée sous-marine sur les pas de mon père. <br>Le monde sous-marin, avec son silence et sa beauté, offre un spectacle dont on ne peut se lasser.",
+            "Image" : "plongée_sketch.jpg"
         },
         {
-            "Nom" : "Arts du feu",
-            "Text" : "Petit texte sur les arts du feu",
-            "Image" : "feu.jpg"
+            "Nom" : "Arts du cirque",
+            "Text" : "Transmis par mes parents, les arts du cirque ont rythmé mon enfance.<br>Jonglage, diabolo, magie et plus récemment arrachage de feu ont développé, au cours des entraînements, rigueur et adresse.",
+            "Image" : "feu_sketch.jpg"
         },
         {
             "Nom" : "Scoutisme",
-            "Text" : "petit texte sur le scoutisme",
-            "Image" : "scouts.png"
+            "Text" : "Scout depuis mes sept ans, le scoutisme m'a beaucoup apporté. <br>Sur le plan technique, ce mouvement m'a appris la débrouillardise, le travail manuel, l'orientation,... <br>Sur un plan humain, il m'a appris l'esprit d'équipe, le leadership, le développement personnel,... <br>Pour résumer, le scoutisme m'a appris à me construire en temps qu'homme sur tous les plans et me permet aujourd'hui de vivre selon l'esprit Scout.",
+            "Image" : "scouts_sketch.jpg"
         }
     ]
 }
