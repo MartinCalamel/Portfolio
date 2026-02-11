@@ -1,0 +1,81 @@
+.loisir-titre{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+.grille-loisir {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+      
+.activite {
+    position: relative;
+    display: flex;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.toggle-section {
+  display: none;
+}
+
+
+.activite img{
+    width: 300px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.activite:hover img{
+    transform: scale(1.05);
+}
+    /* transition: .5s all;
+    filter:blur(10px);
+    z-index: 1;
+} */
+
+/* .presentation{
+    opacity: 0%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 12px;
+    padding:5px;
+    color:white;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                2px 1px 0 #000,
+                -1px 0px 0 #000,
+                1px 0px 0 #000,
+                0px -1px 0 #000,
+                0px 1px 0 #000;
+    height: 100%;
+    width: 290px;
+} */
+
+/* .activite:hover .presentation{
+    opacity: 100%;
+    transition: 1s all;
+} */
+
+.hidden-section {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+#toggle-section-alpi:checked ~ .hidden-section-alpi {
+  display: block;
+}
+
+#toggle-section-mer:checked ~ .hidden-section-mer {
+  display: block;
+}
