@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="../style/style_test_loisir.css">
+<script type="module" src="../scripts/main.js" defer></script>
+<script src="../scripts/loisir.js" defer></script>
+<section class="loisir" id="loisir">
+
+  <h2 class="loisir-titre">Loisir</h2>
+
+  <!-- GRID -->
+  <div class="grille-loisir" id="grille-loisir">
+    <!-- cartes injectées par JS -->
+  </div>
+
+  <!-- CONTENU pleine largeur -->
+  <div class="loisir-contenu" id="loisir-contenu">
+    <!-- sections injectées par JS -->
+  </div>
+
+  <!-- ===== TEMPLATE CARTE ===== -->
+<!-- ===== TEMPLATE CARTE ===== -->
+<template id="tpl-activite">
+  <div class="activite" data-key="{{key}}">
+    <img src="../images/loisir/{{image}}" alt="{{image}}">
+  </div>
+</template>
+
+<!-- ===== TEMPLATE SECTION ===== -->
+<template id="tpl-section">
+  <section class="hidden-section" data-key="{{key}}">
+    <h2>{{titre}}</h2>
+    <p>{{texte}}</p>
+  </section>
+</template>
+
+
+</section>

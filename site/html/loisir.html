@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Calamel</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/style_loisir.css">
+    <script src="../scripts/header.js"></script>
+    <script type="module" src="../scripts/main.js" defer></script>
+</head>
+<body>
+    <header id="header">
+    </header>
+    <section class="titre" id="titre">
+    </section>
+    <section class="loisir">
+        <h2 class="loisir-titre">Loisir</h2>
+
+        <input type="checkbox" id="toggle-section-alpi" class="toggle-section">
+        <input type="checkbox" id="toggle-section-mer" class="toggle-section">
+
+        <div class="grille-loisir">
+            <div class="activite">
+                <label for="toggle-section-alpi" class="image-btn">
+                    <img src="../images/loisir/alpi_sketch.jpg" alt="alpi">
+                </label>
+                
+            </div>
+            <div class="activite">
+                <label for="toggle-section-mer" class="image-btn">
+                    <img src="../images/loisir/plongée_sketch.jpg" alt="alpi">
+                </label>
+            </div>
+        </div>
+
+        <section class="hidden-section hidden-section-alpi">
+            <h2>Montagne</h2>
+            <p>petit text sur la montagne</p>
+        </section>
+        <section class="hidden-section hidden-section-me">
+            <h2>Mer</h2>
+            <p>petit text sur la mer</p>
+        </section>
+    </section>
+</body>
+</html>

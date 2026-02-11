@@ -100,5 +100,27 @@
             "Texte" : "Projet réalisé dans le cadre du module développement Python. Nous avons dû faire un jeu vidéo basé sur Space Invaders avec Python en utilisant la POO.",
             "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_invaders.md"
         }
+    ],
+    "Hobby":[
+        {
+            "Nom" : "Montagne",
+            "Text" : "petit texte sur la montagne",
+            "Image" : "alpi.jpg"
+        },
+        {
+            "Nom" : "Mer",
+            "Text" : "petit texte sur la mer",
+            "Image" : "plongée.jpg"
+        },
+        {
+            "Nom" : "Arts du feu",
+            "Text" : "Petit texte sur les arts du feu",
+            "Image" : "feu.jpg"
+        },
+        {
+            "Nom" : "Scoutisme",
+            "Text" : "petit texte sur le scoutisme",
+            "Image" : "scouts.png"
+        }
     ]
 }
