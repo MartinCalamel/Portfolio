@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerHTML = `
     <h1>Martin Calamel</h1>
     <ul>
-        <li><a href="html/index.html">Education</a></li>
-        <li><a href="html/projet.html">Projet</a></li>
-        <li><a href="html/loisir.html">A propos</a></li>
-        <li><a href="html/contact.html">Contact</a></li>
+        <li><a href="/html/index.html">Education</a></li>
+        <li><a href="/html/projet.html">Projet</a></li>
+        <li><a href="/html/loisir.html">A propos</a></li>
+        <li><a href="/html/contact.html">Contact</a></li>
     </ul>
   `;
   const titreHTML = `
