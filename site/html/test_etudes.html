@@ -1,24 +1,16 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Calamel</title>
-    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
     <link rel="stylesheet" href="../style/style_education.css">
-    <link rel="stylesheet" href="../style/style_diplomes.css">
-    <script src="../scripts/header.js"></script>
-    <script type="module" src="../scripts/main.js" defer></script>
+    <script type="module" src="../scripts/main.js"></script>
     <script type="module" src="../scripts/index.js" defer></script>
+   
 </head>
 <body>
-    <header id="header">
-    </header>
-    <section class="titre" id="titre">
-    </section>
-
     <section id="education" class="education">
-        <h1 class="edu-titre">Education</h1>
         <template id="etud-left-template">
             <div class="etud-left">
                 <div class="etud-left-content">
@@ -45,16 +37,6 @@
                     </div>
                     <p class="etud-text">{{texte}}</p>
                 </div>
-            </div>
-        </template>
-    </section>
-    <section id="diplomes" class="diplomes">
-        <h1>Diplômes et Récompenses</h1>
-        <template id="diplome-template">
-            <div class="badge">
-                <p>{{Nom}}</p>
-                <span class="ribbon3">{{Mention}}</span>
-                <div class="ribbon">{{Année}}</div>
             </div>
         </template>
     </section>

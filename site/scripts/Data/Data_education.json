@@ -1,0 +1,126 @@
+{
+    "Education":[
+        {
+            "ecole" : "CPE_Lyon",
+            "dates" : "2024 - ",
+            "texte" : "École d’ingénieur numérique, dont je suis actuellement le cursus. Elle s’inscrit dans l’optique de former des ingénieurs pluridisciplinaires dans les domaines de l’électronique, de l’informatique et des télécommunications."
+        },
+        {
+            "ecole" : "Prépa Chartreux",
+            "dates" : "2022-2024",
+            "texte" : "La prépa CPE est une classe préparatoire aux grandes écoles associée à CPE Lyon. De ce fait, le programme suivi est similaire aux prépas concours avec en plus une spécialisation dans les matières numériques. "
+        },
+        {
+            "ecole" : "Institution Sainte Jeanne d'Arc",
+            "dates" : "2016-2022",
+            "texte" : "Collège et lycée, cette institution privée classée parmi les meilleurs lycées du var, cette institution nous pousse à nous dépasser avec de nombreux projets tels que des concours (CGénial, CNRD, ...) mais également des formations annexes (BIA, PSC)."
+        }
+    ],
+    "Diplômes":[
+        {
+            "Nom" : "Plongeur niveau 1",
+            "Année" : "2024",
+            "Mention" : ""
+        },
+        {
+            "Nom" : "Baccalauréat",
+            "Année" : "2022",
+            "Mention" : "Mention : Bien"
+        },
+        {
+            "Nom" : "CNRD",
+            "Année" : "2021",
+            "Mention" : "2ᵉ Départemental<br>3ᵉ Académique"
+        },
+        {
+            "Nom" : "BIA",
+            "Année" : "2020",
+            "Mention" : "Mention : Bien"
+        },
+        {
+            "Nom" : "CGénial",
+            "Année" : "2019",
+            "Mention" : "Participation"
+        }
+    ],
+    "Projets_perso":[
+        {
+            "Nom" : "Portfolio",
+            "Image" : "portfolio.PNG",
+            "Texte" : "Un de mes grands projets est la réalisation de ce portfolio. Celui-ci mélange plusieurs compétences telles que le développement web, la gestion de serveur, le DevOps, etc.",
+            "Lien" : "https://github.com/MartinCalamel/Portfolio"
+        },
+        {
+            "Nom" : "Silence",
+            "Image" : "silence.jpg",
+            "Texte" : "Ce projet est une messagerie chiffrée. L’objectif de ce projet est le comprendre et implémenter la méthode ECC, un système d’authentification ainsi qu’une liaison client serveur.",
+            "Lien" : "https://github.com/MartinCalamel/Silence"
+        },
+        {
+            "Nom" : "Music",
+            "Image" : "music.jpg",
+            "Texte" : "Ce projet répond à un besoin. Je ne trouvais aucune application me permettant d’écouter de la musique en hors réseau, sans être constamment pollué de pub. J’ai donc fait un téléchargeur avec une recherche intégré",
+            "Lien" : "https://github.com/MartinCalamel/Music"
+        },
+        {
+            "Nom" : "RSA_Cryptographie",
+            "Image" : "rsa_cryptographie.PNG",
+            "Texte" : "Découverte de la méthode RSA, de ses forces et de ses faiblesses.",
+            "Lien" : "https://github.com/MartinCalamel/RSA_Cryptographie"
+        },
+        {
+            "Nom" : "Z_first",
+            "Image" : "z_first.jpg",
+            "Texte" : "Project de développement d'un virus informatique non fonctionnel. L’objectif était de comprendre comment réaliser un reverse shell.",
+            "Lien" : "https://github.com/MartinCalamel/Z_first"
+        }
+    ],
+    "Projets_ecole":[
+        {
+            "Nom" : "Cπ-Space",
+            "Image" : "Cpi-space.png",
+            "Texte" : "Projet de design, conception et fabrication d'une fusée expérimentale dans le cadre de C-space en partenariat avec le CNES et Planet-Science. Ce projet nous incite à explorer tous les aspects d'une réalisation de grande envergure, d'autant plus que je suis en charge du projet.",
+            "Lien" : ""
+        },
+        {
+            "Nom" : "TSI Synthèse",
+            "Image" : "tsi.jpg",
+            "Texte" : "Projet de fin de module TSI (Traitement et Synthèse d'Image). Il s'agit de concevoir un jeu vidéo en 3D sous Python via le module OpenGL. Pour notre part, nous avons réalisé un labyrinthe.",
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_TSI.md"
+        },
+        {
+            "Nom" : "TLW Synthèse",
+            "Image" : "tlw.png",
+            "Texte" : "Projet dans le cadre du module TLW (Technique et Language du Web). Nous avons réalisé un site internet vitrine pour une agence de voyage fictive dans le but de nous familiariser avec les bases du web (HTML, JavaScript, CSS, API,...)",
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_TLW.md"
+        },
+        {
+            "Nom" : "Space Invader",
+            "Image" : "invaders.jpg",
+            "Texte" : "Projet réalisé dans le cadre du module développement Python. Nous avons dû faire un jeu vidéo basé sur Space Invaders avec Python en utilisant la POO.",
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_invaders.md"
+        }
+    ],
+    "Hobby":[
+        {
+            "Nom" : "Montagne",
+            "Text" : "La montagne fut pour moi un lieu de tous les dépassements, physiques et mentaux.<br>Passionné par la montagne depuis petit, je fus vite arrêté par la peur du vide. <br>C'est grâce à la pratique de l'escalade que j'ai pu, victoire après victoire, aller de plus en plus haut. <br>L’environnement montagnard est pour moi un lieu de paix et d’exigence, me permettant de donner le meilleur de moi-même.",
+            "Image" : "alpi_sketch.jpg"
+        },
+        {
+            "Nom" : "Mer",
+            "Text" : "Originaire du Var, la mer est une évidence dans ma famille. <br>Nageur depuis petit, et apnéiste amateur, ce n'est que récemment que j'ai commencé la plongée sous-marine sur les pas de mon père. <br>Le monde sous-marin, avec son silence et sa beauté, offre un spectacle dont on ne peut se lasser.",
+            "Image" : "plongée_sketch.jpg"
+        },
+        {
+            "Nom" : "Arts du cirque",
+            "Text" : "Transmis par mes parents, les arts du cirque ont rythmé mon enfance.<br>Jonglage, diabolo, magie et plus récemment arrachage de feu ont développé, au cours des entraînements, rigueur et adresse.",
+            "Image" : "feu_sketch.jpg"
+        },
+        {
+            "Nom" : "Scoutisme",
+            "Text" : "Scout depuis mes sept ans, le scoutisme m'a beaucoup apporté. <br>Sur le plan technique, ce mouvement m'a appris la débrouillardise, le travail manuel, l'orientation,... <br>Sur un plan humain, il m'a appris l'esprit d'équipe, le leadership, le développement personnel,... <br>Pour résumer, le scoutisme m'a appris à me construire en temps qu'homme sur tous les plans et me permet aujourd'hui de vivre selon l'esprit Scout.",
+            "Image" : "scouts_sketch.jpg"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+.loisir-titre {
+  font-size: 30px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.grille-loisir {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.activite {
+  cursor: pointer;
+}
+
+.activite img {
+  width: 100%;
+  border-radius: 14px;
+  transition: transform 0.35s ease;
+}
+
+.activite:hover img {
+  transform: scale(1.05);
+}
+
+.loisir-contenu {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hidden-section {
+  margin-top: 0;
+  padding: 0 40px;;
+  border-radius: 16px;
+  border-style: solid;
+  opacity: 0;
+  transform: translateY(20px);
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    max-height 0.6s ease,
+    padding 0.4s ease,
+    margin-top 0.4s ease;
+}
+
+.hidden-section.is-active {
+  margin-top: 60px;
+  padding: 40px;
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 500px;
+}
+
+.hidden-section h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+.hidden-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}

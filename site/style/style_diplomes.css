@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+.diplomes{
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+  gap: 100px 200px;
+  
+}
+
+.diplomes h1{
+  grid-column: span 3;
+  text-align: center;
+}
+
+.badge{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: white;
+  border: solid black 6px;
+  place-self: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.badge p{
+  margin-top: 50px;
+  margin-bottom: -50px;
+  font-size: 28px;
+}
+
+.ribbon{
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgb(0 0 0);
+  
+}
+
+.ribbon3{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+
+  --r: .8em;
+
+  padding-inline: calc(var(--r) + .3em);
+  line-height: 1.8;
+  clip-path: polygon(0 0,100% 0,calc(100% - var(--r)) 50%,100% 100%,0 100%, var(--r) 50%);
+  background: black;
+  width: 300px;
+}
