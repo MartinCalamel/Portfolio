@@ -3,17 +3,17 @@
         {
             "ecole" : "CPE_Lyon",
             "dates" : "2024 - ",
-            "texte" : "École d’ingénieur numérique, dont je suis actuellement le cursus. Elle s’inscrit dans l’optique de former des ingénieurs pluridisciplinaires dans les domaines de l’électronique, de l’informatique et des télécommunications."
+            "texte" : "École d’ingénieurs en numérique, dont je suis actuellement le cursus. Elle elle forme des ingénieurs pluridisciplinaires dans les domaines de l’électronique, de l’informatique et des télécommunications."
         },
         {
             "ecole" : "Prépa Chartreux",
             "dates" : "2022-2024",
-            "texte" : "La prépa CPE est une classe préparatoire aux grandes écoles associée à CPE Lyon. De ce fait, le programme suivi est similaire aux prépas concours avec en plus une spécialisation dans les matières numériques. "
+            "texte" : "La prépa CPE est une classe préparatoire aux grandes écoles associée à CPE Lyon. De ce fait, le programme suivi est similaire aux prépas concours, avec en plus une spécialisation dans les matières numériques. "
         },
         {
             "ecole" : "Institution Sainte Jeanne d'Arc",
             "dates" : "2016-2022",
-            "texte" : "Collège et lycée, cette institution privée classée parmi les meilleurs lycées du var, cette institution nous pousse à nous dépasser avec de nombreux projets tels que des concours (CGénial, CNRD, ...) mais également des formations annexes (BIA, PSC)."
+            "texte" : "Collège et lycée, cette institution privée classée parmi les meilleurs lycées du var. Elle nous pousse à nous dépasser avec de nombreux projets tels que des concours (CGénial, CNRD, ...) mais également des formations annexes (BIA, PSC)."
         }
     ],
     "Diplômes":[
@@ -53,13 +53,13 @@
         {
             "Nom" : "Silence",
             "Image" : "silence.jpg",
-            "Texte" : "Ce projet est une messagerie chiffrée. L’objectif de ce projet est le comprendre et implémenter la méthode ECC, un système d’authentification ainsi qu’une liaison client serveur.",
+            "Texte" : "Ce projet est une messagerie chiffrée. L’objectif de ce projet est de comprendre et implémenter la méthode ECC, un système d’authentification ainsi qu’une liaison client serveur.",
             "Lien" : "https://github.com/MartinCalamel/Silence"
         },
         {
             "Nom" : "Music",
             "Image" : "music.jpg",
-            "Texte" : "Ce projet répond à un besoin. Je ne trouvais aucune application me permettant d’écouter de la musique en hors réseau, sans être constamment pollué de pub. J’ai donc fait un téléchargeur avec une recherche intégré",
+            "Texte" : "Ce projet répond à un besoin. Je ne trouvais aucune application me permettant d’écouter de la musique en hors réseau, sans publicités. J’ai donc fait un téléchargeur avec une recherche intégrée",
             "Lien" : "https://github.com/MartinCalamel/Music"
         },
         {
@@ -79,13 +79,13 @@
         {
             "Nom" : "Cπ-Space",
             "Image" : "Cpi-space.png",
-            "Texte" : "Projet de design, conception et fabrication d'une fusée expérimentale dans le cadre de C-space en partenariat avec le CNES et Planet-Science. Ce projet nous incite à explorer tous les aspects d'une réalisation de grande envergure, d'autant plus que je suis en charge du projet.",
+            "Texte" : "Projet de design, conception et fabrication d'une fusée expérimentale dans le cadre de C-space en partenariat avec le CNES et Planet-Science. Ce projet nous incite à explorer tous les aspects d'une réalisation de grande envergure. J'ai aussi, via mon rôle de chef de projet appris à diriger une équipe efficacement",
             "Lien" : ""
         },
         {
             "Nom" : "TSI Synthèse",
             "Image" : "tsi.jpg",
-            "Texte" : "Projet de fin de module TSI (Traitement et Synthèse d'Image). Il s'agit de concevoir un jeu vidéo en 3D sous Python via le module OpenGL. Pour notre part, nous avons réalisé un labyrinthe.",
+            "Texte" : "Projet de fin de module TSI (Traitement et Synthèse d'Image). Il s'agit de concevoir un jeu vidéo en 3D sous Python via le module OpenGL. Nous avons donc choisi de faire un labyrinthe.",
             "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_TSI.md"
         },
         {
@@ -97,7 +97,7 @@
         {
             "Nom" : "Space Invader",
             "Image" : "invaders.jpg",
-            "Texte" : "Projet réalisé dans le cadre du module développement Python. Nous avons dû faire un jeu vidéo basé sur Space Invaders avec Python en utilisant la POO.",
+            "Texte" : "Projet réalisé dans le cadre du module développement Python. Nous avons dû programmer un jeu vidéo basé sur Space Invaders avec Python en utilisant la POO.",
             "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_invaders.md"
         }
     ],
@@ -109,12 +109,12 @@
         },
         {
             "Nom" : "Mer",
-            "Text" : "Originaire du Var, la mer est une évidence dans ma famille. <br>Nageur depuis petit, et apnéiste amateur, ce n'est que récemment que j'ai commencé la plongée sous-marine sur les pas de mon père. <br>Le monde sous-marin, avec son silence et sa beauté, offre un spectacle dont on ne peut se lasser.",
+            "Text" : "Originaire du Var, la mer a fait partie intégrante de mon enfance. <br>Nageur depuis petit, et apnéiste amateur, ce n'est que récemment que j'ai commencé la plongée sous-marine sur les pas de mon père. <br>Le monde sous-marin, avec son silence et sa beauté, offre un spectacle dont on ne peut se lasser.",
             "Image" : "plongée_sketch.jpg"
         },
         {
             "Nom" : "Arts du cirque",
-            "Text" : "Transmis par mes parents, les arts du cirque ont rythmé mon enfance.<br>Jonglage, diabolo, magie et plus récemment arrachage de feu ont développé, au cours des entraînements, rigueur et adresse.",
+            "Text" : "Transmis par mes parents, les arts du cirque ont rythmé mon enfance.<br>Jonglage, diabolo, magie et plus récemment crachage de feu ont développé, au cours des entraînements, rigueur et adresse.",
             "Image" : "feu_sketch.jpg"
         },
         {
