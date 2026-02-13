@@ -86,19 +86,19 @@
             "Nom" : "TSI Synthèse",
             "Image" : "tsi.jpg",
             "Texte" : "Projet de fin de module TSI (Traitement et Synthèse d'Image). Il s'agit de concevoir un jeu vidéo en 3D sous Python via le module OpenGL. Nous avons donc choisi de faire un labyrinthe.",
-            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_TSI.md"
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/tree/main/site/References%20projets/README_TSI.md"
         },
         {
             "Nom" : "TLW Synthèse",
             "Image" : "tlw.png",
             "Texte" : "Projet dans le cadre du module TLW (Technique et Language du Web). Nous avons réalisé un site internet vitrine pour une agence de voyage fictive dans le but de nous familiariser avec les bases du web (HTML, JavaScript, CSS, API,...)",
-            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_TLW.md"
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/tree/main/site/References%20projets/README_TLW.md"
         },
         {
             "Nom" : "Space Invader",
             "Image" : "invaders.jpg",
             "Texte" : "Projet réalisé dans le cadre du module développement Python. Nous avons dû programmer un jeu vidéo basé sur Space Invaders avec Python en utilisant la POO.",
-            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_invaders.md"
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/tree/main/site/References%20projets/README_invaders.md"
         }
     ],
     "Hobby":[
