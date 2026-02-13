@@ -65,7 +65,7 @@ function reload_time() {
     // calcule du temps depuis la dernière mise à jour des informations.
     let date_session = new Date(localStorage.getItem("connected"));
     let auj = new Date();
-    return (Math.abs(auj - date_session) / (60 * 1000) > 1440); // supérieur à 1 jour
+    return (Math.abs(auj - date_session) / (60 * 1000) > 0.10); // supérieur à 1 jour
 }
 
 if (reload_time()) {

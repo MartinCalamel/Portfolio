@@ -40,7 +40,11 @@ function update_template_loisir() {
         card.dataset.key = key;
 
         let img = card.querySelector("img");
-        img.src = "../images/loisir/" + proj.Image;
+
+        img.dataset.sketch = "../images/loisir/" + proj.Image_sketch;
+        img.dataset.full = "../images/loisir/" + proj.Image;
+
+        img.src = img.dataset.sketch;
         img.alt = proj.Nom;
 
         grid.appendChild(clone_activite);
@@ -81,19 +85,31 @@ document.addEventListener("click", (e) => {
 
   const key = card.dataset.key;
 
-  const sections = document.querySelectorAll(".hidden-section");
+  document.querySelectorAll(".hidden-section")
+    .forEach(sec => sec.classList.remove("is-active"));
 
-  sections.forEach(sec => {
-    sec.classList.remove("is-active");
-  });
+  document.querySelectorAll(".activite img")
+    .forEach(img => {
+      img.src = img.dataset.sketch;
+    });
 
-  const target = document.querySelector(
+  const targetSection = document.querySelector(
     `.hidden-section[data-key="${key}"]`
   );
 
-  if (target) {
-    target.classList.add("is-active");
+  if (targetSection) {
+    targetSection.classList.add("is-active");
+
+    setTimeout(() => {
+      targetSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 200);
   }
+
+  const activeImg = card.querySelector("img");
+  activeImg.src = activeImg.dataset.full;
 
 });
 
