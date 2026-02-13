@@ -34,17 +34,17 @@
 }
 
 .etud-left-content{
-  width: 40%;
+  width: 50%;
   justify-self: end;
   text-align: right;
-  padding: 30px;
+  padding-right: 30px;
 }
 
 .etud-right-content{
-  width: 40%;
+  width: 50%;
   justify-self: start;
   text-align: left;
-  padding: 30px;
+  padding-left: 30px;
 }
 
 .etud-titre{
@@ -57,9 +57,16 @@
 .date{
   width: fit-content;
 }
+.etud-titre h1{
+  max-width: 300px;
+}
 
-.etud-texte{
-  width: 500px;
+.etud-text{
+  max-width: 300px;
+}
+
+.etud-left-content .etud-text{
+  justify-self: end;
 }
 
 .dot{
