@@ -1,3 +1,8 @@
+#proj{
+  color: black;
+  background-color: #bf9d5e;
+}
+
 .type-projet{
     margin: 40px;
     font-size: 40px;
@@ -35,5 +40,8 @@
 
 .div-text-projet{
     width: 30%;
-    font-size: 30px;
+    font-size: 20px;
+}
+#right{
+    text-align: right;
 }

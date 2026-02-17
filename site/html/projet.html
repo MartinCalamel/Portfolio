@@ -9,6 +9,7 @@
     <script src="../scripts/header.js"></script>
     <script type="module" src="../scripts/main.js" defer></script>
     <script type="module" src="../scripts/projets.js" defer></script>
+    <script src="../scripts/projets_img.js" defer></script>
 </head>
 <body>
     <header id="header">
@@ -23,7 +24,7 @@
                 <div class="div-image-projet">
                     <a href="{{Lien}}">
                         <h2>{{Titre}}</h2>
-                        <img src="../images/projet/{{Image}}" alt="{{Image}}">
+                        <img src="../images/projet/{{Image}}" alt="{{Image}}" id="{{Image}}" onmouseover="over('{{Image}}')" onmouseout="off('{{Image}}')">
                     </a>
                 </div>
                 <div class="div-text-projet">
@@ -34,12 +35,12 @@
         <template id="projet-perso-template-2">
             <div class="div-projet">
                 <div class="div-text-projet">
-                    <p>{{Texte}}</p>
+                    <p id="right">{{Texte}}</p>
                 </div>
                 <div class="div-image-projet">
                     <a href="{{Lien}}">
                         <h2>{{Titre}}</h2>
-                        <img src="../images/projet/{{Image}}" alt="{{Image}}">
+                        <img src="../images/projet/{{Image}}" alt="{{Image}}" id="{{Image}}" onmouseover="over('{{Image}}')" onmouseout="off('{{Image}}')">
                     </a>
                 </div>
             </div>
@@ -52,7 +53,7 @@
                 <div class="div-image-projet">
                     <a href="{{Lien}}">
                         <h2>{{Titre}}</h2>
-                        <img src="../images/projet/{{Image}}" alt="{{Image}}">
+                        <img src="../images/projet/{{Image}}" alt="{{Image}}" id="{{Image}}" onmouseover="over('{{Image}}')" onmouseout="off('{{Image}}')">
                     </a>
                 </div>
                 <div class="div-text-projet">
@@ -63,12 +64,12 @@
         <template id="projet-ecole-template-2">
             <div class="div-projet">
                 <div class="div-text-projet">
-                    <p>{{Texte}}</p>
+                    <p id="right">{{Texte}}</p>
                 </div>
                 <div class="div-image-projet">
                     <a href="{{Lien}}">
                         <h2>{{Titre}}</h2>
-                        <img src="../images/projet/{{Image}}" alt="{{Image}}">
+                        <img src="../images/projet/{{Image}}" alt="{{Image}}" id="{{Image}}" onmouseover="over('{{Image}}')" onmouseout="off('{{Image}}')">
                     </a>
                 </div>
             </div>

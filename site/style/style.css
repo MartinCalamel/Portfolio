@@ -13,13 +13,17 @@ header{
   display: flex;
   place-content: center space-between;
   border-bottom: solid black;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
 
 header h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   margin-left: 20px;
 

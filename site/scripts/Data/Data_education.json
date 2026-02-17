@@ -58,7 +58,7 @@
         },
         {
             "Nom" : "Music",
-            "Image" : "music.jpg",
+            "Image" : "music.png",
             "Texte" : "Ce projet répond à un besoin. Je ne trouvais aucune application me permettant d’écouter de la musique en hors réseau, sans publicités. J’ai donc fait un téléchargeur avec une recherche intégrée",
             "Lien" : "https://github.com/MartinCalamel/Music"
         },

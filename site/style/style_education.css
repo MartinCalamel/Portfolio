@@ -5,6 +5,12 @@
   color: inherit;
 }
 
+#edu{
+  color: black;
+  background-color: #96c8f7;
+  /* border: #96c8f7; */
+}
+
 .education{
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
@@ -50,7 +56,7 @@
 .etud-titre{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   max-width: 400px;
 }
 
@@ -63,6 +69,7 @@
 
 .etud-text{
   max-width: 300px;
+  font-size: 17px;
 }
 
 .etud-left-content .etud-text{
@@ -78,4 +85,14 @@
     border-radius: 50%;
     display: inline-block;
     z-index: 0;
+}
+
+.etud-left:hover .dot{
+  background-color: #96c8f7;
+  /* border-color: #96c8f7; */
+}
+
+.etud-right:hover .dot{
+  background-color: #96c8f7;
+  /* border-color: #96c8f7; */
 }

@@ -11,7 +11,7 @@
   grid-template-columns: repeat(3, 1fr);
   margin: 20px;
   gap: 100px 200px;
-  
+  margin-bottom: 70px;
 }
 
 .diplomes h1{
@@ -35,6 +35,15 @@
   font-weight: bold;
   color: black;
   text-align: center;
+}
+
+.badge:hover{
+  border-color: #96c8f7;
+}
+.badge:hover .ribbon{
+  background-color: #96c8f7;
+  box-shadow: 0 4px 10px #96c8f7;
+  color: black;
 }
 
 .badge p{
