@@ -43,8 +43,10 @@ function update_template_projet(type) {
             .replace(/{{Image}}/g, proj.Image)
             .replace(/{{Texte}}/g, proj.Texte);
         
+             // = proj.Image;
         clone.firstElementChild.innerHTML = newcontent;
         document.getElementById("projet-" + type).appendChild(clone);
+        document.getElementById("projet-" + type).lastElementChild.getElementsByClassName("div-image-projet")[0].firstElementChild.lastElementChild.id = proj.Image;
 
         compteur ++;
     }
