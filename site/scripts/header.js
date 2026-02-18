@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   /*
   Ajout du header de façon dynamique
@@ -21,4 +22,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("header").innerHTML = headerHTML;
   document.getElementById("titre").innerHTML = titreHTML;
+  
+  let cursorCircle = document.querySelector(".cursor-circle");
+  const heading = document.querySelector(".titre");
+
+  document.addEventListener("mousemove", (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    cursorCircle.style.left = `${mouseX}px`;
+    cursorCircle.style.top = `${mouseY}px`;
+  });
+
+  // heading.addEventListener("mouseenter", () => {
+  //   cursorCircle.style.width = "300px";
+  //   cursorCircle.style.height = "300px";
+  // });
+
+  // heading.addEventListener("mouseleave", () => {
+  //   cursorCircle.style.width = "0px";
+  //   cursorCircle.style.height = "0px";
+  // })
+
 });
+
+
+
+

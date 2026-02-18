@@ -89,6 +89,9 @@ async function load_page() {
     await set_up_localStorage();
     update_template_education();
     update_template_diplome();
+
+    let cursorCircle = document.querySelector(".cursor-circle");
+    cursorCircle.style.background = "#96c8f7";
     
 }
 

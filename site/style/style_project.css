@@ -3,8 +3,12 @@
   background-color: #bf9d5e;
 }
 
+#projet-perso{
+    background: #fff;
+}
 .type-projet{
-    margin: 40px;
+    /* margin: 40px; */
+    padding-top: 60px;
     font-size: 40px;
     text-align: center;
 }

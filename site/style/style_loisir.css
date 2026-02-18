@@ -1,8 +1,12 @@
 #lois{
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: #a2a2a2;
 }
 
+.loisir{
+  background: #fff;
+  margin-top: -40px ;
+}
 .loisir-titre {
   font-size: 30px;
   text-align: center;

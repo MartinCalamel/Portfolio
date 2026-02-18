@@ -64,6 +64,9 @@ async function load_page() {
     await set_up_localStorage();
     update_template_projet("perso");
     update_template_projet("ecole");
+
+    let cursorCircle = document.querySelector(".cursor-circle");
+    cursorCircle.style.background = "#bf9d5e";
 }
 
 load_page();

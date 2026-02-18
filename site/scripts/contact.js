@@ -1,4 +1,6 @@
 let photo = document.getElementById("image");
+let cursorCircle = document.querySelector(".cursor-circle");
+cursorCircle.style.background = "#ebab34";
 
 function over(){
     photo.src = "../images/Contact/profile.jpg";

@@ -62,3 +62,25 @@ header li:hover{
   font-size: 40px;
   font-weight: bold;
 }
+
+.titre h1{
+  color: #000;
+}
+
+.cursor-circle{
+  z-index: -3;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: white;
+  color: #fff;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.autre{
+  background-color: #fff;
+  height: 1000px;
+  width: 100%;
+}

@@ -74,6 +74,9 @@ async function load_page() {
    
     await set_up_localStorage();
     update_template_loisir();
+    let cursorCircle = document.querySelector(".cursor-circle");
+    cursorCircle.style.background = "#a2a2a2";
+    // cursorCircle.style.border = "solid black 8px";
 }
 
 load_page();

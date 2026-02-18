@@ -14,9 +14,9 @@
 .education{
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
-  margin: 20px;
   padding: 0 0 40px;
   border-bottom: solid;
+  background: #fff;
 }
 
 .education .edu-titre{
