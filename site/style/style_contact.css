@@ -19,7 +19,6 @@
     font-size: 20px;
     text-align: center;
     justify-self: center;
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
 }

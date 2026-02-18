@@ -40,11 +40,6 @@
 .badge:hover{
   border-color: #96c8f7;
 }
-.badge:hover .ribbon{
-  background-color: #96c8f7;
-  box-shadow: 0 4px 10px #96c8f7;
-  color: black;
-}
 
 .badge p{
   margin-top: 50px;
@@ -64,6 +59,12 @@
   font-size: 16px;
   box-shadow: 0 4px 10px rgb(0 0 0);
   
+}
+
+.badge:hover .ribbon{
+  background-color: #96c8f7;
+  box-shadow: 0 4px 10px #96c8f7;
+  color: black;
 }
 
 .ribbon3{

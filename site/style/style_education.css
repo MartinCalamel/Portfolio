@@ -8,7 +8,6 @@
 #edu{
   color: black;
   background-color: #96c8f7;
-  /* border: #96c8f7; */
 }
 
 .education{
@@ -63,6 +62,7 @@
 .date{
   width: fit-content;
 }
+
 .etud-titre h1{
   max-width: 300px;
 }
@@ -89,10 +89,8 @@
 
 .etud-left:hover .dot{
   background-color: #96c8f7;
-  /* border-color: #96c8f7; */
 }
 
 .etud-right:hover .dot{
   background-color: #96c8f7;
-  /* border-color: #96c8f7; */
 }

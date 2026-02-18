@@ -7,6 +7,7 @@
   background: #fff;
   margin-top: -40px ;
 }
+
 .loisir-titre {
   font-size: 30px;
   text-align: center;
@@ -50,12 +51,6 @@
   transform: translateY(20px);
   max-height: 0;
   overflow: hidden;
-  /* transition:
-    opacity 0.2s ease,
-    transform 0.2s ease,
-    max-height 0.3s ease,
-    padding 0.1s ease,
-    margin-top 0.1s ease; */
 }
 
 .hidden-section.is-active {
