@@ -12,11 +12,11 @@ function off() {
     }   
 
 function over_color(id){
-    image = document.getElementById(id);
+    let image = document.getElementById(id);
     image.src = "../images/Contact/color_"+id;
 }
 
 function off_color(id){
-    image = document.getElementById(id);
+    let image = document.getElementById(id);
     image.src = "../images/Contact/"+id;
 }
