@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("titre").innerHTML = titreHTML;
   
   let cursorCircle = document.querySelector(".cursor-circle");
-  const heading = document.querySelector(".titre");
 
   document.addEventListener("mousemove", (e) => {
     const mouseX = e.clientX;
@@ -33,19 +32,4 @@ document.addEventListener("DOMContentLoaded", () => {
     cursorCircle.style.left = `${mouseX}px`;
     cursorCircle.style.top = `${mouseY}px`;
   });
-
-  // heading.addEventListener("mouseenter", () => {
-  //   cursorCircle.style.width = "300px";
-  //   cursorCircle.style.height = "300px";
-  // });
-
-  // heading.addEventListener("mouseleave", () => {
-  //   cursorCircle.style.width = "0px";
-  //   cursorCircle.style.height = "0px";
-  // })
-
 });
-
-
-
-
