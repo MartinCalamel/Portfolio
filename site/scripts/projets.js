@@ -67,6 +67,7 @@ async function load_page() {
     update_template_projet("perso");
     update_template_projet("ecole");
 
+    // met à jour la couleur du masque qui suit le curseur pour la couleur de la page.
     let cursorCircle = document.querySelector(".cursor-circle");
     cursorCircle.style.background = "#bf9d5e";
 }

@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("header").innerHTML = headerHTML;
   document.getElementById("titre").innerHTML = titreHTML;
   
+  // gestion du mouvement du masque
+  
   let cursorCircle = document.querySelector(".cursor-circle");
 
   document.addEventListener("mousemove", (e) => {

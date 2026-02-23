@@ -90,6 +90,7 @@ async function load_page() {
     update_template_education();
     update_template_diplome();
 
+    // met à jour la couleur du masque qui suit le curseur pour la couleur de la page.
     let cursorCircle = document.querySelector(".cursor-circle");
     cursorCircle.style.background = "#96c8f7";
     

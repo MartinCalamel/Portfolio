@@ -8,8 +8,6 @@
 *      * from main.js => get_data_from_localStorage, set_up_localStorage
 */
 
-// import {set_up_localStorage} from "./main.js";
-
 
 import {set_up_localStorage} from "./main.js";
 
@@ -74,14 +72,18 @@ async function load_page() {
    
     await set_up_localStorage();
     update_template_loisir();
+
+    // met à jour la couleur du masque qui suit le curseur pour la couleur de la page.
     let cursorCircle = document.querySelector(".cursor-circle");
     cursorCircle.style.background = "#a2a2a2";
-    // cursorCircle.style.border = "solid black 8px";
 }
 
 load_page();
 
 document.addEventListener("click", (e) => {
+  
+  // lors du click, on affiche la section cacher 
+  // qui contient le texte du loisir et on affiche la vrai image
 
   const card = e.target.closest(".activite");
   if (!card) return;
