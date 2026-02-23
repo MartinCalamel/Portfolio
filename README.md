@@ -9,8 +9,10 @@ L’objectif est de présenter mes compétences et mes projets tout en documenta
 * [Workflow](#Workflow)
   * Gestion des secrets
   * Mettre en place le workflow
+  * Automatisation de la vérification syntaxique
   * Automatisation des tests
   * Automatisation du déploiment
+* [Structure du projet](#Structure-du-projet)
 ## Hébergement
 Pour l'hébergement, j'ai choisi de ne pas utiliser `github site` afin de pouvoir apprendre la gestion d'un serveur.  
 Pour cela il a fallu trouver un hébergeur.
@@ -43,7 +45,42 @@ Ou en une ligne
 ```console
 sudo apt update && sudo apt install nginx -y
 ```
+Par default, le service nginx se lance dès l'installation.  
+On peut verrifier cela grâce à la commande :  
+```console
+systemctl status nginx
+```
+La commande doit retourner quelque chose comme : 
+```console
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2026-02-04 13:34:30 UTC; 1min 34s ago
+       Docs: man:nginx(8)
+    Process: 656 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 716 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 719 (nginx)
+      Tasks: 3 (limit: 6845)
+     Memory: 12.8M
+        CPU: 268ms
+     CGroup: /system.slice/nginx.service
+             ├─719 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             ├─720 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+             └─721 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+
+févr. 04 13:34:28 macalfirst systemd[1]: Starting A high performance web server and a reverse proxy server...
+févr. 04 13:34:30 macalfirst systemd[1]: Started A high performance web server and a reverse proxy server.
+```
+Si ce n'est pas le cas, il est necessaire de faire la commande : 
+```
+systemctl start nginx
+```
 À ce stade, nous avons la page d'accueil d'Nginx en [http://localhost:80](http://localhost:80)  
+Au niveau de l'arborescence du serveur plusieurs fichiers sont intéressant : 
+* /etc/nginx/nginx.conf (*configuration du serveur nginx*)
+* /etc/nginx/sites-enabled/ (*repertoire où sont placer les fichier de configuration des sites*)
+
+Par default nginx affiche un site donc la configuration est en `/etc/nginx/sites-enabled/default`.  
+La page html de ce site est localiser en `/var/www/html/`. (cette information est donner dans le fichier default à la ligne "*root /var/www/html*").  
 Nous allons maintenant voir comment exposer ce site sur internet.
 
 #### Exposition du Port 80
@@ -75,5 +112,43 @@ sudo netfilter-persistent save
 ---
 Vous pouvez désormais récuperer l'adresse ip public de votre instance, dans les details de votre instance, pour accéder à votre page web (*qui est pour le moment la page d'acceuil de Nginx*).
 
-# Workflow
+## Workflow
+### Gestion des secrets
+### Mettre en place le workflow
+Pour la partie CI/CD, j'ai choisi de mettre en place des workflows GitHub action.  
+J'ai également choisi de séparer les différentes étapes.
+### Automatisation de la vérification syntaxique
+Le premier workflow à configurer est celui de la vérification syntaxique.  
+Le workflow que j'ai choisi de mettre en place se déclenche à chaque pull request que je fais sur les branches `main` et `Dev`.  
+Il utilise du linter sous Node.js pour vérifier la syntaxe des fichiers JS, HTML et CSS.  
+[Lien vers le workflow](.github/workflows/syntaxe.yml)
+### Automatisation des tests
+### Automatisation du déploiment
 
+## Structure du projet
+### Structure du dépot
+```
+📁 Portfolio/
+├── 📂 site/
+│   ├── 📂 html
+│   ├── 📂 images
+│   ├── 📂 style
+│   └── 📂 scripts
+├── 📂 .github/
+│   ├── 📂 config
+│   └── 📂 workflow
+├── 📂 README/
+│   └── 📂 images
+├── LICENCE
+└── README.md
+```
+### Structure des branches
+L'optique de ce projet est également de mettre en place des bonnes pratiques de DevOps avec une organisation particulière des branches.  
+Nous aurons quatre catégories de branches : 
+* la branche main
+* la branche de développement (Dev)
+* La branche de CI/CD
+* la branche de documentation (README)
+
+![](README/images/workflow.png)  
+*Schéma représentatif du git flow*
