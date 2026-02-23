@@ -8,8 +8,6 @@
 *      * from main.js => get_data_from_localStorage, set_up_localStorage
 */
 
-// import {set_up_localStorage} from "./main.js";
-
 
 import {set_up_localStorage} from "./main.js";
 
@@ -40,7 +38,11 @@ function update_template_loisir() {
         card.dataset.key = key;
 
         let img = card.querySelector("img");
-        img.src = "../images/loisir/" + proj.Image;
+
+        img.dataset.sketch = "../images/loisir/" + proj.Image_sketch;
+        img.dataset.full = "../images/loisir/" + proj.Image;
+
+        img.src = img.dataset.sketch;
         img.alt = proj.Nom;
 
         grid.appendChild(clone_activite);
@@ -70,30 +72,49 @@ async function load_page() {
    
     await set_up_localStorage();
     update_template_loisir();
+
+    // met à jour la couleur du masque qui suit le curseur pour la couleur de la page.
+    let cursorCircle = document.querySelector(".cursor-circle");
+    cursorCircle.style.background = "#a2a2a2";
 }
 
 load_page();
 
 document.addEventListener("click", (e) => {
+  
+  // lors du click, on affiche la section cacher 
+  // qui contient le texte du loisir et on affiche la vrai image
 
   const card = e.target.closest(".activite");
   if (!card) return;
 
   const key = card.dataset.key;
 
-  const sections = document.querySelectorAll(".hidden-section");
+  document.querySelectorAll(".hidden-section")
+    .forEach(sec => sec.classList.remove("is-active"));
 
-  sections.forEach(sec => {
-    sec.classList.remove("is-active");
-  });
+  document.querySelectorAll(".activite img")
+    .forEach(img => {
+      img.src = img.dataset.sketch;
+    });
 
-  const target = document.querySelector(
+  const targetSection = document.querySelector(
     `.hidden-section[data-key="${key}"]`
   );
 
-  if (target) {
-    target.classList.add("is-active");
+  if (targetSection) {
+    targetSection.classList.add("is-active");
+
+    setTimeout(() => {
+      targetSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 200);
   }
+
+  const activeImg = card.querySelector("img");
+  activeImg.src = activeImg.dataset.full;
 
 });
 

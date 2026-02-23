@@ -1,6 +1,14 @@
+#proj{
+  color: black;
+  background-color: #bf9d5e;
+}
+
+#projet-perso{
+    background: #fff;
+}
+
 .type-projet{
-    margin: 40px;
-    font-size: 40px;
+    padding-top: 60px;
     text-align: center;
 }
 
@@ -9,6 +17,9 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    opacity: 0;
+    transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.6s ease;
 }
 
 .div-image-projet{
@@ -35,5 +46,22 @@
 
 .div-text-projet{
     width: 30%;
-    font-size: 30px;
+    font-size: 24px;
+}
+
+.right{
+    text-align: right;
+}
+
+.left-div {
+    transform: translateX(-120px) scale(0.95);
+}
+
+.right-div {
+    transform: translateX(120px) scale(0.95);
+}
+
+.div-projet.animate {
+    transform: translateX(0);
+    opacity: 1;
 }

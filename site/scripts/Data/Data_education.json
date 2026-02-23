@@ -58,7 +58,7 @@
         },
         {
             "Nom" : "Music",
-            "Image" : "music.jpg",
+            "Image" : "music.png",
             "Texte" : "Ce projet répond à un besoin. Je ne trouvais aucune application me permettant d’écouter de la musique en hors réseau, sans publicités. J’ai donc fait un téléchargeur avec une recherche intégrée",
             "Lien" : "https://github.com/MartinCalamel/Music"
         },
@@ -86,41 +86,45 @@
             "Nom" : "TSI Synthèse",
             "Image" : "tsi.jpg",
             "Texte" : "Projet de fin de module TSI (Traitement et Synthèse d'Image). Il s'agit de concevoir un jeu vidéo en 3D sous Python via le module OpenGL. Nous avons donc choisi de faire un labyrinthe.",
-            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_TSI.md"
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/tree/main/site/References%20projets/README_TSI.md"
         },
         {
             "Nom" : "TLW Synthèse",
             "Image" : "tlw.png",
             "Texte" : "Projet dans le cadre du module TLW (Technique et Language du Web). Nous avons réalisé un site internet vitrine pour une agence de voyage fictive dans le but de nous familiariser avec les bases du web (HTML, JavaScript, CSS, API,...)",
-            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_TLW.md"
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/tree/main/site/References%20projets/README_TLW.md"
         },
         {
             "Nom" : "Space Invader",
             "Image" : "invaders.jpg",
             "Texte" : "Projet réalisé dans le cadre du module développement Python. Nous avons dû programmer un jeu vidéo basé sur Space Invaders avec Python en utilisant la POO.",
-            "Lien" : "https://github.com/MartinCalamel/Portfolio/blob/html_css_projet/site/References%20projets/README_invaders.md"
+            "Lien" : "https://github.com/MartinCalamel/Portfolio/tree/main/site/References%20projets/README_invaders.md"
         }
     ],
     "Hobby":[
         {
             "Nom" : "Montagne",
             "Text" : "La montagne fut pour moi un lieu de tous les dépassements, physiques et mentaux.<br>Passionné par la montagne depuis petit, je fus vite arrêté par la peur du vide. <br>C'est grâce à la pratique de l'escalade que j'ai pu, victoire après victoire, aller de plus en plus haut. <br>L’environnement montagnard est pour moi un lieu de paix et d’exigence, me permettant de donner le meilleur de moi-même.",
-            "Image" : "alpi_sketch.jpg"
+            "Image_sketch" : "alpi_sketch.jpg",
+            "Image" : "alpi.jpg"
         },
         {
             "Nom" : "Mer",
             "Text" : "Originaire du Var, la mer a fait partie intégrante de mon enfance. <br>Nageur depuis petit, et apnéiste amateur, ce n'est que récemment que j'ai commencé la plongée sous-marine sur les pas de mon père. <br>Le monde sous-marin, avec son silence et sa beauté, offre un spectacle dont on ne peut se lasser.",
-            "Image" : "plongée_sketch.jpg"
+            "Image_sketch" : "plongée_sketch.jpg",
+            "Image" : "plongée.jpg"
         },
         {
             "Nom" : "Arts du cirque",
             "Text" : "Transmis par mes parents, les arts du cirque ont rythmé mon enfance.<br>Jonglage, diabolo, magie et plus récemment crachage de feu ont développé, au cours des entraînements, rigueur et adresse.",
-            "Image" : "feu_sketch.jpg"
+            "Image_sketch" : "feu_sketch.jpg",
+            "Image" : "feu.jpg"
         },
         {
             "Nom" : "Scoutisme",
             "Text" : "Scout depuis mes sept ans, le scoutisme m'a beaucoup apporté. <br>Sur le plan technique, ce mouvement m'a appris la débrouillardise, le travail manuel, l'orientation,... <br>Sur un plan humain, il m'a appris l'esprit d'équipe, le leadership, le développement personnel,... <br>Pour résumer, le scoutisme m'a appris à me construire en temps qu'homme sur tous les plans et me permet aujourd'hui de vivre selon l'esprit Scout.",
-            "Image" : "scouts_sketch.jpg"
+            "Image_sketch" : "scouts_sketch.jpg",
+            "Image" : "scouts.png"
         }
     ]
 }

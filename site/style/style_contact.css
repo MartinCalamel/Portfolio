@@ -1,7 +1,15 @@
+#contact{
+  color: black;
+  background-color: #ebab34;
+}
+
+.contact{
+    background: #fff;
+    padding-top: 40px;
+}
+
 .contact-titre{
-    font-size: 50px;
     justify-self: center;
-    margin-top: 100px;
     text-align: center;
 }
 
@@ -9,7 +17,6 @@
     font-size: 20px;
     text-align: center;
     justify-self: center;
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }

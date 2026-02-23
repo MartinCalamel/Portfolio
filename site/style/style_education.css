@@ -5,12 +5,18 @@
   color: inherit;
 }
 
+#edu{
+  color: black;
+  background-color: #96c8f7;
+}
+
 .education{
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
-  margin: 20px;
   padding: 0 0 40px;
   border-bottom: solid;
+  background: #fff;
+  padding-top: 40px;
 }
 
 .education .edu-titre{
@@ -34,23 +40,23 @@
 }
 
 .etud-left-content{
-  width: 40%;
+  width: 50%;
   justify-self: end;
   text-align: right;
-  padding: 30px;
+  padding-right: 30px;
 }
 
 .etud-right-content{
-  width: 40%;
+  width: 50%;
   justify-self: start;
   text-align: left;
-  padding: 30px;
+  padding-left: 30px;
 }
 
 .etud-titre{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   max-width: 400px;
 }
 
@@ -58,8 +64,17 @@
   width: fit-content;
 }
 
-.etud-texte{
-  width: 500px;
+.etud-titre h1{
+  max-width: 300px;
+}
+
+.etud-text{
+  max-width: 300px;
+  font-size: 20px;
+}
+
+.etud-left-content .etud-text{
+  justify-self: end;
 }
 
 .dot{
@@ -71,4 +86,12 @@
     border-radius: 50%;
     display: inline-block;
     z-index: 0;
+}
+
+.etud-left:hover .dot{
+  background-color: #96c8f7;
+}
+
+.etud-right:hover .dot{
+  background-color: #96c8f7;
 }
