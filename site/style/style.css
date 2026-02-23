@@ -9,18 +9,27 @@ a {
   text-decoration: none;
 }
 
+h1{
+  font-size: 30px;
+}
+
 header{
   display: flex;
   place-content: center space-between;
   border-bottom: solid black;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
 
 header h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
+  margin-left: 20px;
 
 }
 
@@ -56,4 +65,27 @@ header li:hover{
   border-bottom: solid;
   font-size: 40px;
   font-weight: bold;
+}
+
+.titre h1{
+  color: #000;
+  font-size: 60px;
+}
+
+.cursor-circle{
+  z-index: -3;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: white;
+  color: #fff;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.autre{
+  background-color: #fff;
+  height: 1000px;
+  width: 100%;
 }

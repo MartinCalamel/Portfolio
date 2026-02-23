@@ -43,8 +43,10 @@ function update_template_projet(type) {
             .replace(/{{Image}}/g, proj.Image)
             .replace(/{{Texte}}/g, proj.Texte);
         
+             // = proj.Image;
         clone.firstElementChild.innerHTML = newcontent;
         document.getElementById("projet-" + type).appendChild(clone);
+        document.getElementById("projet-" + type).lastElementChild.getElementsByClassName("div-image-projet")[0].firstElementChild.lastElementChild.id = proj.Image;
 
         compteur ++;
     }
@@ -64,6 +66,10 @@ async function load_page() {
     await set_up_localStorage();
     update_template_projet("perso");
     update_template_projet("ecole");
+
+    // met à jour la couleur du masque qui suit le curseur pour la couleur de la page.
+    let cursorCircle = document.querySelector(".cursor-circle");
+    cursorCircle.style.background = "#bf9d5e";
 }
 
 load_page();

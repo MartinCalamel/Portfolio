@@ -9,21 +9,23 @@
     <script src="../scripts/header.js"></script>
     <script type="module" src="../scripts/main.js" defer></script>
     <script type="module" src="../scripts/projets.js" defer></script>
+    <script src="../scripts/projets_img.js" defer></script>
 </head>
 <body>
     <header id="header">
     </header>
     <section class="titre" id="titre">
     </section>
+    <div class="cursor-circle"></div>
 
     <section id="projet-perso">
-        <h2 class="type-projet">- Projet Personnel -</h2>
+        <h1 class="type-projet">Projets Personnels</h1>
         <template id="projet-perso-template-1">
-            <div class="div-projet">
+            <div class="div-projet left-div">
                 <div class="div-image-projet">
                     <a href="{{Lien}}">
                         <h2>{{Titre}}</h2>
-                        <img src="../images/projet/{{Image}}" alt="{{Image}}">
+                        <img src="../images/projet/{{Image}}" alt="{{Image}}" onmouseover="over('{{Image}}')" onmouseout="off('{{Image}}')">
                     </a>
                 </div>
                 <div class="div-text-projet">
@@ -32,27 +34,27 @@
             </div>
         </template>
         <template id="projet-perso-template-2">
-            <div class="div-projet">
+            <div class="div-projet right-div">
                 <div class="div-text-projet">
-                    <p>{{Texte}}</p>
+                    <p id="right">{{Texte}}</p>
                 </div>
                 <div class="div-image-projet">
                     <a href="{{Lien}}">
                         <h2>{{Titre}}</h2>
-                        <img src="../images/projet/{{Image}}" alt="{{Image}}">
+                        <img src="../images/projet/{{Image}}" alt="{{Image}}" onmouseover="over('{{Image}}')" onmouseout="off('{{Image}}')">
                     </a>
                 </div>
             </div>
         </template>
     </section>
     <section id="projet-ecole">
-        <h2 class="type-projet">- Projet Scolaire -</h2>
+        <h1 class="type-projet">Projet Scolaire</h1>
         <template id="projet-ecole-template-1">
-            <div class="div-projet">
+            <div class="div-projet left-div">
                 <div class="div-image-projet">
                     <a href="{{Lien}}">
                         <h2>{{Titre}}</h2>
-                        <img src="../images/projet/{{Image}}" alt="{{Image}}">
+                        <img src="../images/projet/{{Image}}" alt="{{Image}}" onmouseover="over('{{Image}}')" onmouseout="off('{{Image}}')">
                     </a>
                 </div>
                 <div class="div-text-projet">
@@ -61,14 +63,14 @@
             </div>
         </template>
         <template id="projet-ecole-template-2">
-            <div class="div-projet">
+            <div class="div-projet right-div">
                 <div class="div-text-projet">
-                    <p>{{Texte}}</p>
+                    <p class="right">{{Texte}}</p>
                 </div>
                 <div class="div-image-projet">
                     <a href="{{Lien}}">
                         <h2>{{Titre}}</h2>
-                        <img src="../images/projet/{{Image}}" alt="{{Image}}">
+                        <img src="../images/projet/{{Image}}" alt="{{Image}}" onmouseover="over('{{Image}}')" onmouseout="off('{{Image}}')">
                     </a>
                 </div>
             </div>
