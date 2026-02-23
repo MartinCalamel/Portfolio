@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+h1{
+  font-size: 30px;
+}
+
 header{
   display: flex;
   place-content: center space-between;
@@ -65,6 +69,7 @@ header li:hover{
 
 .titre h1{
   color: #000;
+  font-size: 60px;
 }
 
 .cursor-circle{

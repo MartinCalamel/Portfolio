@@ -5,13 +5,12 @@
 
 .loisir{
   background: #fff;
-  margin-top: -40px ;
+  padding-top: 40px;
 }
 
 .loisir-titre {
-  font-size: 30px;
   text-align: center;
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 
 .grille-loisir {
@@ -67,6 +66,6 @@
 }
 
 .hidden-section p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
 }

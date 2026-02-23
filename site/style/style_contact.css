@@ -5,13 +5,11 @@
 
 .contact{
     background: #fff;
-    margin-top: -100px;
+    padding-top: 40px;
 }
 
 .contact-titre{
-    font-size: 50px;
     justify-self: center;
-    margin-top: 100px;
     text-align: center;
 }
 

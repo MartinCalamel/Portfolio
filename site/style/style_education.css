@@ -16,6 +16,7 @@
   padding: 0 0 40px;
   border-bottom: solid;
   background: #fff;
+  padding-top: 40px;
 }
 
 .education .edu-titre{
@@ -69,7 +70,7 @@
 
 .etud-text{
   max-width: 300px;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .etud-left-content .etud-text{
