@@ -87,7 +87,6 @@ Nous allons maintenant voir comment exposer ce site sur internet.
 Pour exposer le Port 80 (*http*), il faut configurer l'instance à la fois via le paneaux de configuration `oracle` mais égalament via la connexion `ssh` (secure shell).  
 *Si vous ne savez pas comment établir une connexion SSH, allez voir [ici](https://docs.oracle.com/en-us/iaas/Content/Compute/tutorials/first-linux-instance/overview.htm#connect-to-vm-instance)*.  
 
----
 **Configuration Oracle**  
 Une fois dans votre instance, il faut suivre ce chemin :  
 *Networking > Subnet > Sécurity > Default Security List for [subnet-name] > Security rules*  
@@ -106,9 +105,55 @@ Il faut maintenant ajouter une `Ingress Rules` afin d'autoriser la connexion au 
 Une fois connecté en SSH, il faut autoriser les connexions au port 80.  
 Pour cela, exécutez la commande : 
 ```console
+sudo ufw allow 80
 sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
 sudo netfilter-persistent save
 ```
+---
+#### Exposition du Port 443
+Pour exposer le Port 443 (*https*), il faut configurer l'instance à la fois via le paneaux de configuration `oracle` mais égalament via la connexion `ssh` (secure shell).
+
+**Configuration Oracle**  
+Une fois dans votre instance, il faut suivre ce chemin :  
+*Networking > Subnet > Sécurity > Default Security List for [subnet-name] > Security rules*  
+Il faut maintenant ajouter une `Ingress Rules` afin d'autoriser la connexion au port 443.
+
+| Nom | Valeur |
+| --- | --- |
+| Source Type | CIDR |
+| Source CIDR | 0.0.0.0/0 |
+| Ip Protocole | TCP |
+| Source Port Range | All |
+| Destination Port Range | 443 |
+| Description | Votre_Description |
+
+**Configuration SSH**  
+Une fois connecté en SSH, il faut autoriser les connexions au port 443.  
+Pour cela, exécutez la commande : 
+```console
+sudo ufw allow 443
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 443 -j ACCEPT
+sudo netfilter-persistent save
+```
+
+Il faut également obtenir un certificat ssl pour sécuriser la connection et obtenir le `s` de l'*https*.  
+Pour cela nous allons utiliser `certbot`. Il s'agit d'un outils de gestion de certificat ssl.
+
+Installation
+```console
+sudo apt update
+sudo apt install certbot python3-certbot-nginx
+```
+
+Gestion du certificat : Mise en place
+```console
+sudo certbot --nginx -d ton-domaine.com -d www.ton-domaine.com
+```
+Gestion du certificat : Verification
+```console
+sudo certbot renew --dry-run
+``` 
+
 ---
 Vous pouvez désormais récuperer l'adresse ip public de votre instance, dans les details de votre instance, pour accéder à votre page web (*qui est pour le moment la page d'acceuil de Nginx*).
 
